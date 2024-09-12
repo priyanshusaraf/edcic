@@ -1,0 +1,30 @@
+/* AboutUs.css */
+.aboutUsAvatar {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 16px;
+}
+
+.aboutUsCard {
+  text-align: center;
+  padding: 24px 16px;
+}
+
+.aboutUsTimeline {
+  color: white;
+  height: 100%;
+  background: var(--ash-black);
+  width: 120%;
+  margin-left: -10%;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 780px) {
+  .aboutUsTimeline {
+    color: white;
+    height: 100%;
+    background: var(--ash-black);
+    width: 110%;
+    margin-left: -5%;
+  }
+}

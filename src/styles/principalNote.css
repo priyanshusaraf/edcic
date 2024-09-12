@@ -1,0 +1,222 @@
+/* .principalNote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  background: linear-gradient(90deg, #3d0023, #0b001b);
+  color: white;
+  height: 80vh;
+  width: 100%;
+}
+.principalImg {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.principalText {
+  width: 50%;
+  height: 100%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.principalTextHead {
+  font-size: 4rem;
+  margin-bottom: 40px;
+}
+
+.principalButton {
+  margin: 20px;
+  width: 30%;
+}
+
+.principalButton:hover {
+  background: blue;
+}
+
+@media screen and (max-width: 1024px) {
+  .principalNote {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .principalImg {
+    width: 60%;
+    height: 100%;
+    margin-top: 50px;
+  }
+  .principalTextHead {
+    font-size: 2rem;
+    height: 100%;
+    margin-bottom: -40%;
+    margin-top: 10%;
+  }
+  .principalTextContent {
+    font-size: 14px;
+    width: 120%;
+    height: 40vh;
+    margin-bottom: 20%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .principalNote {
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    height: 100vh;
+  }
+  .principalImg {
+    width: 60%;
+    height: 100%;
+    margin-top: 50px;
+  }
+  .principalTextHead {
+    font-size: 2rem;
+    height: 100%;
+  }
+  .principalTextContent {
+    font-size: 14px;
+    width: 120%;
+    height: 40vh;
+    margin: 20%;
+    padding: 10px;
+  }
+  .principalButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: -40%;
+  }
+  .principalText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+} */
+
+.principalNote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  background: linear-gradient(90deg, #3d0023, #0b001b);
+  color: white;
+  height: 80vh;
+  width: 100%;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.principalImg {
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.principalText {
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.principalTextHead {
+  font-size: 3.5rem;
+  margin-bottom: 5%;
+}
+
+.principalTextContent {
+  margin-bottom: 5%;
+}
+.principalButton {
+  margin: 20px auto;
+  width: 50%;
+  padding: 10px;
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.principalButton:hover {
+  background-color: blue;
+}
+
+@media screen and (max-width: 1024px) {
+  .principalNote {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .principalImg {
+    width: 60%;
+    margin-top: 20px;
+  }
+
+  .principalTextHead {
+    font-size: 3rem;
+  }
+
+  .principalTextContent {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .principalButton {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .principalNote {
+    height: auto;
+    padding: 10px;
+  }
+
+  .principalImg {
+    width: 80%;
+  }
+
+  .principalText {
+    width: 100%;
+  }
+
+  .principalTextHead {
+    font-size: 2.5rem;
+  }
+
+  .principalTextContent {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .principalButton {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .principalTextHead {
+    font-size: 2rem;
+  }
+
+  .principalButton {
+    width: 100%;
+  }
+}

@@ -1,0 +1,33 @@
+/* NetworkMarquee.css */
+.marquee {
+  display: flex;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.marquee-content > * {
+  flex: 0 0 auto;
+}
+
+.networkHeadText {
+  text-align: center;
+  font-size: 4rem;
+  background: linear-gradient(90deg, #ff79c6, #bd93f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  font-weight: 600;
+}
+
+.networkMarquee {
+  background: linear-gradient(90deg, rgb(46, 25, 44), #230054);
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

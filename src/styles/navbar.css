@@ -1,0 +1,28 @@
+.appBar {
+  position: sticky;
+}
+
+.logo {
+  background: none;
+  border: none;
+  height: 1vh;
+  width: 1vw;
+}
+
+.toolBar {
+  backdrop-filter: blur(4px) saturate(0%);
+  -webkit-backdrop-filter: blur(4px) saturate(0%);
+  background-color: rgba(23, 25, 30, 0.91);
+}
+
+@media screen and (min-width: 768px) {
+  .appBar {
+    position: sticky;
+  }
+}
+
+@media screen and (min-width: 200px) {
+  .appBar {
+    position: sticky;
+  }
+}

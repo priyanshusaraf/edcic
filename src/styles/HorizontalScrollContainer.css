@@ -1,0 +1,57 @@
+/* HorizontalScrollContainer.css */
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 16px;
+  scroll-behavior: smooth;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative; /* Allows for more control over child elements */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.card {
+  flex: 0 0 auto; /* Prevent cards from stretching */
+  width: 300px; /* Fixed card width */
+  margin-right: 16px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.card-description {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 200px;
+  }
+}

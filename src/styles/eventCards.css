@@ -1,0 +1,27 @@
+.cardHolder {
+  display: flex;
+  list-style: none;
+}
+
+.card {
+  height: 60vh;
+  background: black;
+  border-radius: 10px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.eventsHead {
+  color: #1e1e1e;
+  font-size: 2rem;
+  text-align: center;
+  font: bold;
+}
+
+.scroll-container {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}

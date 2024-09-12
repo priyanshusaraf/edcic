@@ -1,0 +1,96 @@
+.bannerText {
+  font-size: 12px;
+}
+
+h1::selection p::selection {
+  background: yellow;
+}
+
+@media (max-width: 768px) {
+  .bannerText {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .footerImg {
+    width: 50%; /* Increase width for visibility */
+    margin: 10px auto; /* Center the image */
+  }
+
+  .footerLinks {
+    width: 100%; /* Full width for smaller screens */
+    text-align: center; /* Center text */
+    border: none; /* Remove borders for cleaner look */
+    padding: 10px 0; /* Adjust padding */
+  }
+
+  .footerDown {
+    flex-direction: column; /* Stack elements */
+    text-align: center; /* Center text */
+    margin-top: 10px; /* Adjust margin */
+  }
+}
+
+/* For smaller mobile devices */
+@media (max-width: 480px) {
+  * {
+    overflow-x: hidden;
+  }
+  .footer {
+    height: auto; /* Allow height to adjust based on content */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .footerImg {
+    width: 70%; /* Further increase image width */
+    margin: 10px auto; /* Center the image */
+  }
+  .footerLinks_link {
+    width: 50%;
+    margin: 10px auto;
+  }
+  .footerLinks {
+    padding: 10px 0; /* Adjust padding */
+  }
+
+  .footerSocialsText {
+    font-size: 12px; /* Reduce font size */
+  }
+}
+
+.bannerHeader {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 1;
+  font-size: 16rem;
+  font: "poppins";
+  font-weight: semi-bold;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .bannerHeader {
+    font-size: 12rem;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .bannerHeader {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .bannerHeader {
+    font-size: 8rem;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 100px) {
+  .bannerHeader {
+    font-size: 4rem;
+  }
+}

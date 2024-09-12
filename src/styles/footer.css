@@ -1,0 +1,115 @@
+.footer {
+  height: 40vh;
+  width: 100%;
+  background: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px; /* Added padding for smaller screens */
+}
+
+.footerUp {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  justify-content: space-between; /* Adjust spacing */
+}
+
+.footerImg {
+  width: 20%;
+  margin: 20px; /* Reduced margin for smaller screens */
+}
+
+.footerLinks {
+  width: 50%;
+  height: auto; /* Allow height to adjust based on content */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 10px;
+  border-right: 0.5px solid rgb(161, 161, 161);
+  border-left: 0.5px solid rgb(161, 161, 161);
+}
+
+.footerLinksText {
+  margin-left: 18px;
+}
+
+.footerDown {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Add margin for separation */
+}
+
+.footerSocials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footerSocialsText {
+  font-size: 14px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and larger mobile devices */
+@media (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .footerUp {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .footerImg {
+    width: 50%; /* Increase width for visibility */
+    margin: 10px auto; /* Center the image */
+  }
+
+  .footerLinks {
+    width: 100%; /* Full width for smaller screens */
+    text-align: center; /* Center text */
+    border: none; /* Remove borders for cleaner look */
+    padding: 10px 0; /* Adjust padding */
+  }
+
+  .footerDown {
+    flex-direction: column; /* Stack elements */
+    text-align: center; /* Center text */
+    margin-top: 10px; /* Adjust margin */
+  }
+}
+
+/* For smaller mobile devices */
+@media (max-width: 480px) {
+  * {
+    overflow-x: hidden;
+  }
+  .footer {
+    height: auto; /* Allow height to adjust based on content */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .footerImg {
+    width: 70%; /* Further increase image width */
+    margin: 10px auto; /* Center the image */
+  }
+  .footerLinks_link {
+    width: 50%;
+    margin: 10px auto;
+  }
+  .footerLinks {
+    padding: 10px 0; /* Adjust padding */
+  }
+
+  .footerSocialsText {
+    font-size: 12px; /* Reduce font size */
+  }
+}
