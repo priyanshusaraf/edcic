@@ -8,10 +8,10 @@ import AboutUs from "./pages/AboutUs";
 import Fund from "./pages/Fund";
 import Blog from "./pages/Blog";
 import IncubationCenter from "./pages/IncubationCentre";
-import PastPartners from "./pages/PastPartners";
 import Archives from "./pages/Archives";
+import Initiatives from "./components/Initiatives";
 import Contact from "./pages/Contact";
-import VerticalTime from "./components/VerticalTimeline";
+import WhatWeDo from "./components/WhatWeDo";
 import EventComponent from "./pages/EventComponent";
 import linkData from "./assets/linkData";
 function App() {
@@ -20,14 +20,13 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/events" element={<Events />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/fund" element={<Fund />} />
-        <Route path="/blog/*" element={<Blog />} />
-        <Route path="/past-partners" element={<PastPartners />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/initiatives" element={<Initiatives />} />
+        <Route path="/what-we-do" element={<WhatWeDo />} />
         <Route path="/archives" element={<Archives />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/incubation-centre" element={<IncubationCenter />} />
+        <Route path="/partners" element={<Contact />} />
+        <Route path="/team" element={<IncubationCenter />} />
+        <Route path="/contact" element={<IncubationCenter />} />
         {linkData.map((data, index) => {
           <Route
             path={data.path}
