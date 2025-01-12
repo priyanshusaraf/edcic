@@ -1,5 +1,5 @@
 import React from "react";
-import board from "../assets/board.png";
+import board from "../assets/hero-image.jpg";
 import { Typography, Box } from "@mui/material";
 import "../styles/team.css";
 

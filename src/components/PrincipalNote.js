@@ -1,44 +1,110 @@
 import React from "react";
-import "../styles/principalNote.css";
-import { Button } from "@mui/material";
-import { Link } from "react-router-dom";
-function PrincipalNote() {
+import styled from "styled-components";
+import principalImage from "../assets/principal.jpeg"; // Replace with the actual path to the principal's image
+
+const NoteContainer = styled.div`
+  background-color: #001d4a; /* Dark blue background */
+  color: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+
+  .note-header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .note-content {
+    background-color: #ffffff;
+    color: #001d4a;
+    border-radius: 20px;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    .image-container {
+      flex-shrink: 0;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.3);
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .text-content {
+      flex: 1;
+      text-align: left;
+
+      h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+
+        @media (min-width: 768px) {
+          text-align: left;
+        }
+      }
+
+      p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        text-align: justify;
+      }
+
+      .quote-marks {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #001d4a;
+      }
+    }
+  }
+`;
+
+const PrincipalNote = () => {
   return (
-    <div className="principal">
-      <div className="principalNote">
-        <div className="principalImg">
-          <img
-            src="https://www.edcsxc.com/wp-content/uploads/2023/11/principal-edited.jpg"
-            alt=""
-          />
+    <NoteContainer>
+      <div className="note-header">TESTIMONIAL</div>
+      <div className="note-content">
+        <div className="image-container">
+          <img src={principalImage} alt="Reverend Father Dominic Savio SJ" />
         </div>
-        <div className="principalText">
-          <p className="principalTextHead">Principal's Note</p>
-          <p className="principalTextContent">
-            Rev. Dr. Dominic Savio, S.J. St. Xavier’s College (Autonomous),
-            Kolkata is proud to have contributed to the cause of education and
-            culture in Bengal for the last 160 years. We were the first to set
-            up a centre for Entrepreneurship in the form of NSTEDB [National
-            Science and Technology Entrepreneurship Development Board] in an
-            undergraduate Arts, Science and Commerce College. The
-            Entrepreneurship Development Cell of St. Xavier’s College
-            (Autonomous), Kolkata, intends to nurture an entrepreneurial
-            attitude among young minds by conducting various programmes for the
-            undergraduate students where they are given a platform to interact
-            with the corporate intelligentsia…
-          </p>
-          <Button
-            sx={{ color: "aqua", border: "1px solid aqua" }}
-            component={Link}
-            className="principalButton"
-            to="principals-note"
-          >
-            Learn More
-          </Button>
+        <div className="text-content">
+          <h3>REVEREND FATHER DOMINIC SAVIO SJ</h3>
+          <div>
+            <span className="quote-marks">“</span>
+            <p>
+              The power to think differently and ahead of the times for the
+              betterment of mankind is what sets entrepreneurs apart. India’s
+              young generation today has that power. History has witnessed that
+              countries which have encouraged entrepreneurs have grown at a
+              faster pace. Entrepreneurs create opportunities, create jobs,
+              create value and create wonders out of nothing. E-Cell provides
+              exposure to entrepreneurship at an early age, helping many
+              students realize their potential as individuals and world
+              citizens.
+            </p>
+            <span className="quote-marks">”</span>
+          </div>
         </div>
       </div>
-    </div>
+    </NoteContainer>
   );
-}
+};
 
 export default PrincipalNote;
