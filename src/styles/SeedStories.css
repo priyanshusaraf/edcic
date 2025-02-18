@@ -1,0 +1,93 @@
+.seedStories {
+  background: #00004c;
+  width: 100%;
+  color: white;
+}
+
+.seedStories__heading {
+  font-size: 50px;
+}
+
+.seedStories__headerView {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seedStories__middlePart {
+  font-size: 35px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.seedStories__intro {
+  color: white;
+  margin: 50px;
+}
+
+.seedStories__story {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.seedStories__description {
+  font-size: 20px;
+  width: 40%;
+}
+.seedStories__img {
+  object-fit: contain;
+  width: 700px;
+  height: 300px;
+}
+
+.seedStories__story {
+  margin: 50px;
+}
+
+.seedStories__videoSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.seedStories__videoLink {
+  display: inline-block;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.seedStories__videoThumbnail {
+  width: 800px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.seedStories__videoThumbnail:hover {
+  transform: scale(1.05);
+}
+
+.seedStories__subscribeButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.seedStories__subscribeButton:hover {
+  background-color: #cc0000;
+}

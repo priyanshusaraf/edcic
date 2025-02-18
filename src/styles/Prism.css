@@ -1,0 +1,155 @@
+.prism__container {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.prism__banner {
+  background: linear-gradient(135deg, #7b1fa2, #4a148c);
+  color: white;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.prism__bannerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 90%; /* Ensure responsiveness */
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.prism__text {
+  flex: 1;
+  text-align: left;
+  padding-right: 20px;
+  max-width: 600px;
+}
+
+.prism__text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.prism__text p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.prism__registerButton {
+  background: white;
+  color: #4a148c;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.prism__bannerLogo {
+  flex: 1;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+.prism__about {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.prism__about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.prism__aboutContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.prism__textContent {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.prism__textContentPara {
+  width: 40%;
+  text-align: center;
+  padding-left: 140px;
+  font-size: 18px;
+}
+
+.prism__aboutImage {
+  flex: 1;
+  height: 100%;
+  object-fit: cover;
+  max-width: 50%;
+}
+
+.prism__eventImage {
+  max-width: 40%;
+  height: auto;
+}
+
+.prism__partners {
+  background: #4a148c;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.prism__partners h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.prism__partnersGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.prism__partner {
+  text-align: center;
+  width: 150px;
+}
+
+.prism__partner img {
+  max-width: 100%;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.prism__partner p {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .prism__bannerContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .prism__text {
+    text-align: center;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .prism__aboutContent {
+    flex-direction: column;
+  }
+
+  .prism__eventImage {
+    max-width: 80%;
+  }
+}

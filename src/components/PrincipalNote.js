@@ -46,6 +46,12 @@ const NoteContainer = styled.div`
       }
     }
 
+    .principalNote {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     .text-content {
       flex: 1;
       text-align: left;
@@ -78,32 +84,34 @@ const NoteContainer = styled.div`
 
 const PrincipalNote = () => {
   return (
-    <NoteContainer>
-      <div className="note-header">TESTIMONIAL</div>
-      <div className="note-content">
-        <div className="image-container">
-          <img src={principalImage} alt="Reverend Father Dominic Savio SJ" />
-        </div>
-        <div className="text-content">
-          <h3>REVEREND FATHER DOMINIC SAVIO SJ</h3>
-          <div>
-            <span className="quote-marks">“</span>
-            <p>
-              The power to think differently and ahead of the times for the
-              betterment of mankind is what sets entrepreneurs apart. India’s
-              young generation today has that power. History has witnessed that
-              countries which have encouraged entrepreneurs have grown at a
-              faster pace. Entrepreneurs create opportunities, create jobs,
-              create value and create wonders out of nothing. E-Cell provides
-              exposure to entrepreneurship at an early age, helping many
-              students realize their potential as individuals and world
-              citizens.
-            </p>
-            <span className="quote-marks">”</span>
+    <div className="principalNote">
+      <NoteContainer>
+        <div className="note-header">TESTIMONIAL</div>
+        <div className="note-content">
+          <div className="image-container">
+            <img src={principalImage} alt="Reverend Father Dominic Savio SJ" />
+          </div>
+          <div className="text-content">
+            <h3>REVEREND FATHER DOMINIC SAVIO SJ</h3>
+            <div>
+              <span className="quote-marks">“</span>
+              <p>
+                The power to think differently and ahead of the times for the
+                betterment of mankind is what sets entrepreneurs apart. India’s
+                young generation today has that power. History has witnessed
+                that countries which have encouraged entrepreneurs have grown at
+                a faster pace. Entrepreneurs create opportunities, create jobs,
+                create value and create wonders out of nothing. E-Cell provides
+                exposure to entrepreneurship at an early age, helping many
+                students realize their potential as individuals and world
+                citizens.
+              </p>
+              <span className="quote-marks">”</span>
+            </div>
           </div>
         </div>
-      </div>
-    </NoteContainer>
+      </NoteContainer>
+    </div>
   );
 };
 

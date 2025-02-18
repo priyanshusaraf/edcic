@@ -1,0 +1,185 @@
+.entreprise__container {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Banner Section */
+.entreprise__banner {
+  background: linear-gradient(135deg, #1f25a2, #4a148c);
+  color: white;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.entreprise__bannerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 90%; /* Ensure responsiveness */
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.entreprise__text {
+  flex: 1;
+  text-align: left;
+  padding-right: 20px;
+  max-width: 600px;
+}
+
+.entreprise__text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.entreprise__text p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.entreprise__registerButton {
+  background: white;
+  color: #4a148c;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.entreprise__bannerLogo {
+  flex: 1;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* About Section */
+.entreprise__about {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.entreprise__about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.entreprise__aboutContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.entreprise__textContentPara {
+  flex: 1;
+  text-align: left;
+  font-size: 18px;
+}
+
+.entreprise__aboutImage {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Partners Section */
+.entreprise__partners {
+  background: #14148c;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.entreprise__partners h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.entreprise__partnersGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.entreprise__partner {
+  text-align: center;
+  width: 150px;
+}
+
+.entreprise__partner img {
+  max-width: 100%;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.entreprise__partner p {
+  font-size: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .entreprise__banner {
+    height: auto; /* Allow the height to adapt for smaller screens */
+    padding: 20px;
+  }
+
+  .entreprise__bannerContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .entreprise__text {
+    text-align: center;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .entreprise__aboutContent {
+    flex-direction: column;
+  }
+
+  .entreprise__aboutImage {
+    max-width: 100%;
+  }
+
+  .entreprise__partnersGrid {
+    flex-direction: column;
+  }
+
+  .entreprise__partner {
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .entreprise__text h1 {
+    font-size: 2rem;
+  }
+
+  .entreprise__text p {
+    font-size: 1.2rem;
+  }
+
+  .entreprise__registerButton {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .entreprise__about h2 {
+    font-size: 1.5rem;
+  }
+
+  .entreprise__partners h2 {
+    font-size: 1.5rem;
+  }
+}

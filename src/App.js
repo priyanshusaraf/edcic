@@ -1,19 +1,31 @@
-import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import React from "react";
+import Navbar from "./components/Navbar";
+import EacPage from "./pages/Eac.js";
 import Home from "./pages/Home";
-import Events from "./pages/Events";
 import AboutUs from "./pages/AboutUs";
-import Fund from "./pages/Fund";
-import Blog from "./pages/Blog";
-import IncubationCenter from "./pages/IncubationCentre";
+import IncubationCenter from "./pages/IncubationCentreAnimation.js";
+import Prism from "./pages/Prism";
 import Archives from "./pages/Archives";
+import NotFound from "./pages/NotFound";
+import Initium from "./pages/Initium";
+import Elevator from "./pages/Elevator";
 import Initiatives from "./components/Initiatives";
 import Contact from "./pages/Contact";
 import WhatWeDo from "./components/WhatWeDo";
 import EventComponent from "./pages/EventComponent";
+import SeedStories from "./pages/SeedStories";
+import Entreprise from "./pages/Entreprise";
 import linkData from "./assets/linkData";
+import IncubationCentre from "./pages/IncubationCentre.js";
+import Team from "./pages/Team.js";
+import Edf from "./pages/Edf.js";
+import Workshop360 from "./pages/_360";
+import Envisage from "./pages/Envisage";
+import LiveProjects from "./pages/LiveProjects.js";
+import Bizwalk from "./pages/Bizwalk.js";
+
 function App() {
   return (
     <div className="app">
@@ -24,9 +36,36 @@ function App() {
         <Route path="/initiatives" element={<Initiatives />} />
         <Route path="/what-we-do" element={<WhatWeDo />} />
         <Route path="/archives" element={<Archives />} />
-        <Route path="/partners" element={<Contact />} />
-        <Route path="/team" element={<IncubationCenter />} />
-        <Route path="/contact" element={<IncubationCenter />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/events/prism" element={<Prism />} />
+        <Route path="/events/initium" element={<Initium />} />
+        <Route path="/initium" element={<Initium />} />
+        <Route path="/events/elevator" element={<Elevator />} />
+        <Route path="/events/entreprise" element={<Entreprise />} />
+        <Route path="/seed-stories" element={<SeedStories />} />
+        <Route path="/events/eac" element={<EacPage />} />
+        <Route path="/eac" element={<EacPage />} />
+        <Route path="/bizwalk" element={<Bizwalk />} />
+        <Route path="/initiatives/seed-stories" element={<SeedStories />} />
+        <Route path="/start-up-voice" element={<SeedStories />} />
+        <Route path="/initiatives/edf" element={<Edf />} />
+        <Route path="/edf" element={<Edf />} />
+        <Route path="/initiatives/live-projects" element={<LiveProjects />} />
+        <Route path="/live-projects" element={<LiveProjects />} />
+        <Route
+          path="/initiatives/incubation-centre"
+          element={<IncubationCentre />}
+        />
+        <Route path="/incubation-centre" element={<IncubationCentre />} />
+        <Route path="/initiatives/incubation" element={<IncubationCentre />} />
+        <Route path="*" element={<NotFound />} />
+        <Route path="/360" element={<Workshop360 />} />
+        <Route path="/envisage" element={<Envisage />} />
+        <Route path="/envisage" element={<Envisage />} />
+        <Route path="/events/workshop" element={<Workshop360 />} />
+        <Route path="/events/360" element={<Workshop360 />} />
+        <Route path="/events/elevator" element={<Elevator />} />
         {linkData.map((data, index) => {
           <Route
             path={data.path}

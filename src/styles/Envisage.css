@@ -1,0 +1,54 @@
+.envisage__container {
+  background: linear-gradient(to bottom, #000428, #004e92);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.envisage__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.envisage__description {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+}
+
+.envisage__image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.envisage__image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.envisage__image:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .envisage__title {
+    font-size: 2rem;
+  }
+
+  .envisage__description {
+    font-size: 1rem;
+  }
+
+  .envisage__image-grid {
+    grid-template-columns: 1fr;
+  }
+}

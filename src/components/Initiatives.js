@@ -106,13 +106,13 @@ const Initiatives = () => {
           </Link>
         </div>
         <div className="initiative-card">
-          <Link to="/initiatives/startup-voice">
+          <Link to="/seed-stories">
             <img
               src={startupVoiceImage}
               alt="Start Up Voice"
               className="image"
             />
-            <span className="title">Start Up Voice</span>
+            <span className="title">Seed Stories</span>
           </Link>
         </div>
         <div className="initiative-card">

@@ -1,0 +1,98 @@
+/* General Styles */
+.our-vision-container {
+  font-family: "Arial", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+/* Vision Section */
+.vision-section {
+  background: linear-gradient(to bottom, #1a1a40, #281e5d);
+  padding: 60px 20px;
+}
+
+.vision-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.vision-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Reach Section */
+.reach-section {
+  background: linear-gradient(to bottom, #281e5d, #1a1a40);
+  padding: 60px 20px;
+}
+
+.reach-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.reach-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.reach-card {
+  text-align: center;
+  max-width: 150px;
+}
+
+.reach-icon {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.reach-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.reach-card p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .vision-section p,
+  .reach-section h2 {
+    font-size: 1rem;
+  }
+
+  .reach-icons {
+    gap: 20px;
+  }
+
+  .reach-card h3 {
+    font-size: 1.2rem;
+  }
+}
+
+.ourVision__heading {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.ourVision__body {
+  width: 70%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.ourVision__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 60vh;
+}

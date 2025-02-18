@@ -75,15 +75,19 @@ function Footer() {
             >
               <FacebookIcon />
             </Button>{" "}
-            <Button sx={{ color: "black" }} component={Link} to="">
+            <Button
+              sx={{ color: "black" }}
+              component={Link}
+              to="https://www.youtube.com/@EDCICSXC"
+            >
               <YouTubeIcon />
             </Button>
           </div>
-          <p className="footerSocialsText">pr@edcsxc.com</p>
+          <p className="footerSocialsText">pr@edcicsxc.com</p>
         </div>
       </div>
       <div className="footerDown">
-        <p className="edcCopyright">© 2023 edcsxc. All Rights Reserved. </p>
+        <p className="edcCopyright">© 2025 edcicsxc. All Rights Reserved. </p>
       </div>
     </div>
   );

@@ -1,0 +1,42 @@
+.stats__container {
+  background: linear-gradient(to right, #d35400, #f39c12);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.stats__item {
+  flex: 1;
+  padding: 10px;
+}
+
+.stats__number {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.stats__label {
+  font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stats__container {
+    flex-direction: column;
+  }
+
+  .stats__item {
+    margin-bottom: 20px;
+  }
+
+  .stats__number {
+    font-size: 2rem;
+  }
+
+  .stats__label {
+    font-size: 1rem;
+  }
+}

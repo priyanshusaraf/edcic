@@ -9,13 +9,15 @@ import OurTeam from "../components/OurTeam";
 import NetworkMarquee from "../components/OurNetwork";
 import Certificate from "../components/Certificate";
 import HomeHeroSection from "../components/HomeHeroSection";
+import OurVision from "../components/OurVision";
 function Home() {
   return (
     <div className="home">
       <HomeHeroSection />
       {/* <Info /> */}
       <PrincipalNote />
-      <Stats />
+      <OurVision />
+      {/* <Stats /> */}
       <Events />
       <Initiatives />
       <Certificate />

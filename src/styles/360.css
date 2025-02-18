@@ -1,0 +1,189 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.workshop360__wrapper {
+  background: linear-gradient(to right, #3f1d65, #0d1c5b);
+  color: white;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Section 1: Logo & Title */
+.workshop360__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.workshop360__content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.workshop360__title {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: "Georgia", serif;
+}
+
+.workshop360__logo {
+  width: 250px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+/* Section 2: Description */
+.workshop360__description {
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.workshop360__heading {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.workshop360__text {
+  font-size: 1.5rem;
+  line-height: 2;
+  max-width: 80%;
+  text-align: justify;
+}
+
+/* Section 3: Past Workshops */
+.workshop360__past {
+  width: 100%;
+  padding: 5rem;
+}
+
+.workshop360__pastTitle {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.workshop360__pastContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.workshop360__pastItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid white;
+  padding: 2.5rem;
+  width: 45%;
+  gap: 2rem;
+}
+
+.workshop360__pastText {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: left;
+  max-width: 60%;
+}
+
+.workshop360__pastImage {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .workshop360__title {
+    font-size: 3rem;
+  }
+
+  .workshop360__logo {
+    width: 180px;
+  }
+
+  .workshop360__description {
+    padding: 3rem;
+  }
+
+  .workshop360__heading {
+    font-size: 2.5rem;
+  }
+
+  .workshop360__text {
+    font-size: 1.2rem;
+  }
+
+  .workshop360__pastItem {
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    padding: 2rem;
+  }
+
+  .workshop360__pastText {
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
+
+  .workshop360__pastImage {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .workshop360__content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .workshop360__title {
+    font-size: 2.5rem;
+  }
+
+  .workshop360__logo {
+    width: 140px;
+  }
+
+  .workshop360__description {
+    padding: 2rem;
+  }
+
+  .workshop360__heading {
+    font-size: 2rem;
+  }
+
+  .workshop360__text {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .workshop360__pastContainer {
+    flex-direction: column;
+  }
+
+  .workshop360__pastItem {
+    width: 100%;
+  }
+
+  .workshop360__pastImage {
+    width: 140px;
+    height: 140px;
+  }
+}

@@ -1,29 +1,43 @@
-/* AboutUs.css */
-.aboutUsAvatar {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 16px;
-}
-
-.aboutUsCard {
-  text-align: center;
-  padding: 24px 16px;
-}
-
 .aboutUsTimeline {
-  color: white;
   height: 100%;
-  background: var(--ash-black);
+  background: linear-gradient(to bottom, #0c0b65, #010250);
   width: 120%;
   margin-left: -10%;
   padding-top: 20px;
+  border-radius: 16px;
+}
+
+.vertical-timeline-element-content {
+  background: white !important;
+  color: #010250 !important;
+  border: none;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vertical-timeline-element-content-arrow {
+  border-right: 7px solid white !important;
+}
+
+.vertical-timeline-element-title,
+.vertical-timeline-element-subtitle,
+.vertical-timeline-element-content p {
+  color: #010250;
+}
+
+.vertical-timeline-element-date {
+  color: #010250;
+}
+
+.vertical-timeline-element-icon {
+  background: white !important;
+  color: #010250 !important;
+  border: none;
 }
 
 @media screen and (max-width: 780px) {
   .aboutUsTimeline {
-    color: white;
-    height: 100%;
-    background: var(--ash-black);
     width: 110%;
     margin-left: -5%;
   }

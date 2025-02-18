@@ -1,250 +1,275 @@
-// AboutUs.js
 import React from "react";
 import "../styles/aboutUs.css";
-import {
-  Box,
-  Container,
-  Typography,
-  Grid,
-  Card,
-  CardContent,
-  Avatar,
-} from "@mui/material";
+import OurReach from "../components/OurReach.js";
+import OurVision from "../components/OurVision.js";
+import { Container, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-const teamMembers = [
-  {
-    name: "John Doe",
-    role: "CEO",
-    image: "https://via.placeholder.com/150",
-  },
-  {
-    name: "Jane Smith",
-    role: "CTO",
-    image: "https://via.placeholder.com/150",
-  },
-  {
-    name: "Alice Johnson",
-    role: "COO",
-    image: "https://via.placeholder.com/150",
-  },
-  {
-    name: "Alice Johnson",
-    role: "COO",
-    image: "https://via.placeholder.com/150",
-  },
-  {
-    name: "Alice Johnson",
-    role: "COO",
-    image: "https://via.placeholder.com/150",
-  },
-  {
-    name: "Alice Johnson",
-    role: "COO",
-    image: "https://via.placeholder.com/150",
-  },
-];
 
 const AboutUs = () => {
   return (
-    <Container maxWidth="2xl" sx={{ py: 5 }}>
-      {/* Intro Section */}
-
-      <Typography variant="h2" align="center" gutterBottom>
-        About Us
-      </Typography>
-      <Typography variant="h6" align="center" paragraph>
-        We are a team of dedicated professionals committed to delivering
-        excellence in everything we do. Our mission is to innovate and lead the
-        industry with our cutting-edge solutions.
-      </Typography>
-      <div className="aboutUsTimeline">
+    <>
+      <Container maxWidth="100%" sx={{ py: 5 }}>
+        {/* Intro Section */}
         <Typography
           variant="h2"
-          sx={{ width: "md", fontSize: "3.2rem", margin: "20px" }}
           align="center"
           gutterBottom
+          sx={{ color: "white" }}
         >
-          A Brief History Of Events
+          About Us
         </Typography>
-        <VerticalTimeline>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work verticalElement"
-            contentStyle={{
-              background: "rgb(20,20,20)",
-              color: "#fff",
-              borderStyle:
-                "1px solid linear-gradient(rgba(255,255,255), rgba(160,32,240))",
-            }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-            date="2011 - present"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          >
-            <h3 className="vertical-timeline-element-title">Our Beginning</h3>
-            <h4 className="vertical-timeline-element-subtitle">2001</h4>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              tempore tenetur quae omnis possimus quam odit recusandae iusto,
-              explicabo quidem at dolorum, temporibus facere ipsam natus
-              excepturi quod rerum earum.
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2010 - 2011"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Growing into something
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">grow balls</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
-              atque maxime veniam deleniti delectus ipsa eligendi quibusdam
-              perspiciatis illo, autem consequatur totam sed? Officiis natus
-              similique aut magni, sint voluptas!
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2008 - 2010"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          >
-            <h3 className="vertical-timeline-element-title">
-              They see me rolling
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">they hate it</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ea
-              numquam quibusdam similique tenetur, repellat rerum dolore
-              perspiciatis aspernatur sit nesciunt in doloribus velit officiis
-              iusto nobis. Impedit, harum labore.
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2006 - 2008"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          >
-            <h3 className="vertical-timeline-element-title">Web Designer</h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              San Francisco, CA
-            </h4>
-            <p>User Experience, Visual Design</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="April 2013"
-            iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Content Marketing for Web, Mobile and Social Media
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Online Course
-            </h4>
-            <p>Strategy, Social Media</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="November 2012"
-            iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Agile Development Scrum Master
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Certification
-            </h4>
-            <p>Creative Direction, User Experience, Visual Design</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="2002 - 2006"
-            iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Bachelor of Science in Interactive Digital Media Visual Imaging
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Bachelor Degree
-            </h4>
-            <p>Creative Direction, Visual Design</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-          />
-        </VerticalTimeline>
-      </div>
-
-      {/* Team Section */}
-      <Box sx={{ py: 5 }} className="aboutUsHeader">
-        <Typography variant="h4" align="center" gutterBottom>
-          Meet Our Team
-        </Typography>
-        <Grid container spacing={4}>
-          {teamMembers.map((member, index) => (
-            <Grid
-              item
-              xs={12}
-              sm={6}
-              md={4}
-              key={index}
-              className="aboutUsCard"
-            >
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
-              >
-                <Card sx={{ textAlign: "center", py: 3 }}>
-                  <Avatar
-                    src={member.image}
-                    alt={member.name}
-                    sx={{ width: 100, height: 100, margin: "0 auto 16px auto" }}
-                    className="aboutUsAvatar"
-                  />
-                  <CardContent>
-                    <Typography variant="h6">{member.name}</Typography>
-                    <Typography variant="subtitle1" color="textSecondary">
-                      {member.role}
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            </Grid>
-          ))}
-        </Grid>
-      </Box>
-
-      {/* Mission Statement */}
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <Box sx={{ py: 5 }}>
+        <div className="aboutUsTimeline">
           <Typography
-            variant="h4"
+            variant="h2"
             align="center"
             gutterBottom
-            className="aboutUsHead"
+            sx={{ fontSize: "3.2rem", margin: "20px", color: "white" }}
           >
-            Our Mission
+            A Brief History Of Events
           </Typography>
-          <Typography variant="body1" align="center" className="aboutUsMission">
-            Our mission is to create innovative products that improve lives. We
-            strive to be a leader in our industry, continuously pushing the
-            boundaries of what’s possible and delivering exceptional value to
-            our customers and stakeholders.
-          </Typography>
-        </Box>
-      </motion.div>
-    </Container>
+
+          {/* Timeline Section */}
+          <VerticalTimeline>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{
+                background: "white",
+                color: "#010250",
+                border: "none",
+                borderRadius: "12px",
+              }}
+              contentArrowStyle={{ borderRight: "7px solid white" }}
+              date="2015"
+              iconStyle={{ background: "white", color: "#010250" }}
+            >
+              <Typography
+                variant="h5"
+                className="vertical-timeline-element-title"
+              >
+                Foundation of EDC
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                className="vertical-timeline-element-subtitle"
+              >
+                2015
+              </Typography>
+              <Typography>
+                The Entrepreneurship Development Cell (EDC) was established to
+                foster innovation, entrepreneurship, and startup culture among
+                students at St. Xavier's College (Autonomous), Kolkata.
+              </Typography>
+            </VerticalTimelineElement>
+
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              date="2017"
+              iconStyle={{ background: "white", color: "#010250" }}
+            >
+              <Typography
+                variant="h5"
+                className="vertical-timeline-element-title"
+              >
+                Biztatva Goes National
+              </Typography>
+              <Typography>
+                Biztatva, the first EDC event to expand its reach across India,
+                marked a significant milestone, showcasing the growing impact of
+                entrepreneurship at EDC.
+              </Typography>
+            </VerticalTimelineElement>
+
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              date="2019"
+              iconStyle={{ background: "white", color: "#010250" }}
+            >
+              <Typography
+                variant="h5"
+                className="vertical-timeline-element-title"
+              >
+                Entrepreneurship Awareness Camp (EAC)
+              </Typography>
+              <Typography>
+                The first Entrepreneurship Awareness Camp (EAC) was organized to
+                educate students about entrepreneurship and connect startups
+                with investors and mentors.
+              </Typography>
+            </VerticalTimelineElement>
+
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              date="2019"
+              iconStyle={{ background: "white", color: "#010250" }}
+            >
+              <Typography
+                variant="h5"
+                className="vertical-timeline-element-title"
+              >
+                Initium: Collaboration with Placement Cell
+              </Typography>
+              <Typography>
+                In collaboration with the Placement Cell, EDC launched Initium –
+                The Internship Expo, connecting students with top companies and
+                fostering career development.
+              </Typography>
+            </VerticalTimelineElement>
+
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              date="2020"
+              iconStyle={{ background: "white", color: "#010250" }}
+            >
+              <Typography
+                variant="h5"
+                className="vertical-timeline-element-title"
+              >
+                Biztatva to Entreprise
+              </Typography>
+              <Typography>
+                Biztatva was restructured into Entreprise, a national-level
+                entrepreneurial simulation that tests participants' business
+                acumen through rigorous rounds.
+              </Typography>
+            </VerticalTimelineElement>
+
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              date="2022"
+              iconStyle={{ background: "white", color: "#010250" }}
+            >
+              <Typography
+                variant="h5"
+                className="vertical-timeline-element-title"
+              >
+                IIC Certification Awarded
+              </Typography>
+              <Typography>
+                The Institution’s Innovation Council (IIC) certification
+                recognized EDC’s commitment to fostering an entrepreneurial
+                ecosystem within the college.
+              </Typography>
+            </VerticalTimelineElement>
+
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              date="2022"
+              iconStyle={{ background: "white", color: "#010250" }}
+            >
+              <Typography
+                variant="h5"
+                className="vertical-timeline-element-title"
+              >
+                Teafit at Shark Tank India
+              </Typography>
+              <Typography>
+                Teafit, a startup hosted at EAC, secured ₹50 lakh for 8% equity
+                after impressing the Sharks on Shark Tank India.
+              </Typography>
+            </VerticalTimelineElement>
+
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              date="2022"
+              iconStyle={{ background: "white", color: "#010250" }}
+            >
+              <Typography
+                variant="h5"
+                className="vertical-timeline-element-title"
+              >
+                Rhizospheri-X Incubation
+              </Typography>
+              <Typography>
+                EDC incubated its first startup, Rhizospheri-X, which develops
+                eco-friendly biofertilizers and biopesticides. The startup
+                continues to receive mentorship and support from EDC.
+              </Typography>
+            </VerticalTimelineElement>
+
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              date="2023"
+              iconStyle={{ background: "white", color: "#010250" }}
+            >
+              <Typography
+                variant="h5"
+                className="vertical-timeline-element-title"
+              >
+                First Patent Filing
+              </Typography>
+              <Typography>
+                EDC marked a significant milestone by facilitating its first
+                patent filing, promoting innovation-driven entrepreneurship.
+              </Typography>
+            </VerticalTimelineElement>
+
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              date="2023"
+              iconStyle={{ background: "white", color: "#010250" }}
+            >
+              <Typography
+                variant="h5"
+                className="vertical-timeline-element-title"
+              >
+                Launch of Envisage
+              </Typography>
+              <Typography>
+                EDC launched "Envisage," its official newsletter, offering
+                valuable business insights to inspire and inform future leaders.
+              </Typography>
+            </VerticalTimelineElement>
+
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              date="2023"
+              iconStyle={{ background: "white", color: "#010250" }}
+            >
+              <Typography
+                variant="h5"
+                className="vertical-timeline-element-title"
+              >
+                Bizwalk Initiative
+              </Typography>
+              <Typography>
+                EDC launched Bizwalk, providing students with hands-on exposure
+                to established startups through guided visits, starting with a
+                visit to the Coca-Cola factory.
+              </Typography>
+            </VerticalTimelineElement>
+
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              date="2024"
+              iconStyle={{ background: "white", color: "#010250" }}
+            >
+              <Typography
+                variant="h5"
+                className="vertical-timeline-element-title"
+              >
+                Transformation to EDCIC
+              </Typography>
+              <Typography>
+                EDC transformed into EDCIC with the establishment of a formal
+                incubation center, fostering the growth of promising startups.
+              </Typography>
+            </VerticalTimelineElement>
+          </VerticalTimeline>
+        </div>
+
+        {/* Team Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        ></motion.div>
+      </Container>
+    </>
   );
 };
 

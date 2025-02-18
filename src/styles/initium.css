@@ -1,0 +1,59 @@
+.initium__container {
+  background-color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.initium__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e65100;
+}
+
+.initium__text-left,
+.initium__text-right {
+  flex: 1;
+  text-transform: uppercase;
+}
+
+.initium__text-center {
+  flex: 0.2;
+  font-size: 1.5rem;
+  color: #ff6d00;
+}
+
+.initium__logo-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.initium__logo {
+  max-width: 60%;
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .initium__top {
+    flex-direction: column;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .initium__text-left,
+  .initium__text-right,
+  .initium__text-center {
+    margin-bottom: 10px;
+  }
+
+  .initium__logo {
+    max-width: 80%;
+  }
+}

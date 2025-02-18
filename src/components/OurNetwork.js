@@ -2,7 +2,48 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Box, Typography } from "@mui/material";
 import "../styles/ourNetwork.css";
-import networkData from "../assets/NetworkData";
+
+// Import all images individually
+import img1 from "../assets/speakerSessions/360degree_1.png";
+import img2 from "../assets/speakerSessions/360degree_2.png";
+import img3 from "../assets/speakerSessions/360degree_3.png";
+import img4 from "../assets/speakerSessions/360degree_4.png";
+import img6 from "../assets/speakerSessions/360degree_6.png";
+import img5 from "../assets/speakerSessions/360degree_5.png";
+import img8 from "../assets/speakerSessions/eac_2.png";
+import img7 from "../assets/speakerSessions/eac_1.png";
+import img9 from "../assets/speakerSessions/eac_3.png";
+import img10 from "../assets/speakerSessions/eac_4.png";
+import img11 from "../assets/speakerSessions/prism_1.png";
+import img12 from "../assets/speakerSessions/prism_2.png";
+import img13 from "../assets/speakerSessions/prism_3.png";
+import img14 from "../assets/speakerSessions/INITIUM.png";
+import img15 from "../assets/speakerSessions/ELEVATOR.png";
+import img16 from "../assets/speakerSessions/entreprise_1.png";
+import img17 from "../assets/speakerSessions/entreprise_2.png";
+import img18 from "../assets/speakerSessions/entreprise_3.png";
+
+// Define the network data
+const networkData = [
+  { name: "Speaker 1", image: img1 },
+  { name: "Speaker 2", image: img2 },
+  { name: "Speaker 3", image: img3 },
+  { name: "Speaker 4", image: img4 },
+  { name: "Speaker 5", image: img5 },
+  { name: "Speaker 6", image: img6 },
+  { name: "Speaker 7", image: img7 },
+  { name: "Speaker 8", image: img8 },
+  { name: "Speaker 9", image: img9 },
+  { name: "Speaker 10", image: img10 },
+  { name: "Speaker 11", image: img11 },
+  { name: "Speaker 12", image: img12 },
+  { name: "Speaker 13", image: img13 },
+  { name: "Speaker 14", image: img14 },
+  { name: "Speaker 15", image: img15 },
+  { name: "Speaker 16", image: img16 },
+  { name: "Speaker 17", image: img17 },
+  { name: "Speaker 18", image: img18 },
+];
 
 const NetworkMarquee = () => {
   return (
@@ -20,27 +61,31 @@ const NetworkMarquee = () => {
           }}
         >
           <Box className="marquee-content" sx={{ display: "flex" }}>
-            {[...networkData, ...networkData].map((person, index) => (
+            {[...networkData, ...networkData].map((session, index) => (
               <Box
                 key={index}
                 sx={{
-                  minWidth: "150px",
+                  minWidth: "300px",
                   textAlign: "center",
                   mx: 2,
                 }}
               >
                 <img
-                  src={person.image}
-                  alt={person.name}
+                  src={session.image}
+                  alt={session.name}
                   style={{
-                    width: "150px",
-                    height: "150px",
-                    borderRadius: "50%",
+                    width: "300px",
+                    height: "180px", // Rectangular aspect ratio
+                    borderRadius: "6px",
                     objectFit: "cover",
+                    border: "5px solid white",
                   }}
                 />
-                <Typography variant="subtitle1" sx={{ mt: 1 }}>
-                  {person.name}
+                <Typography
+                  variant="subtitle1"
+                  sx={{ mt: 1, fontWeight: "bold" }}
+                >
+                  {session.name}
                 </Typography>
               </Box>
             ))}
@@ -52,106 +97,3 @@ const NetworkMarquee = () => {
 };
 
 export default NetworkMarquee;
-
-// import React from "react";
-// import { Box, Typography } from "@mui/material";
-// import "../styles/ourNetwork.css";
-
-// function NetworkMarquee() {
-//   const network = [
-//     { name: "Person 1", img: "https://via.placeholder.com/150" },
-//     { name: "Person 2", img: "https://via.placeholder.com/150" },
-//     { name: "Person 3", img: "https://via.placeholder.com/150" },
-//     { name: "Person 4", img: "https://via.placeholder.com/150" },
-//     { name: "Person 5", img: "https://via.placeholder.com/150" },
-//   ];
-
-//   return (
-//     <Box sx={{ overflow: "hidden", padding: "20px" }}>
-//       <Typography
-//         variant="h4"
-//         sx={{
-//           textAlign: "center",
-//           marginBottom: "20px",
-//           fontSize: {
-//             xs: "1.5rem", // Extra small screens
-//             sm: "2rem", // Small screens
-//             md: "2.5rem", // Medium screens
-//             lg: "3rem", // Large screens
-//             xl: "3.5rem", // Extra large screens
-//           },
-//         }}
-//       >
-//         Our Network
-//       </Typography>
-//       <Box className="network-container" sx={{ display: "flex" }}>
-//         <Box
-//           className="scrolling-container"
-//           sx={{
-//             display: "flex",
-//             animation: "scroll 20s linear infinite",
-//             "&:hover": {
-//               animationPlayState: "paused", // Pause on hover
-//             },
-//             "@keyframes scroll": {
-//               "0%": { transform: "translateX(0)" },
-//               "100%": { transform: `translateX(-${network.length * 100}%)` },
-//             },
-//           }}
-//         >
-//           {network.map((person, index) => (
-//             <Box
-//               key={index}
-//               sx={{
-//                 minWidth: "200px",
-//                 margin: "0 20px",
-//                 textAlign: "center",
-//               }}
-//             >
-//               <Box
-//                 component="img"
-//                 src={person.img}
-//                 alt={person.name}
-//                 sx={{
-//                   width: {
-//                     xs: "100px", // Extra small screens
-//                     sm: "120px", // Small screens
-//                     md: "140px", // Medium screens
-//                     lg: "160px", // Large screens
-//                     xl: "180px", // Extra large screens
-//                   },
-//                   height: {
-//                     xs: "100px",
-//                     sm: "120px",
-//                     md: "140px",
-//                     lg: "160px",
-//                     xl: "180px",
-//                   },
-//                   borderRadius: "50%",
-//                 }}
-//               />
-//               <Typography
-//                 variant="subtitle1"
-//                 sx={{
-//                   fontSize: {
-//                     xs: "0.75rem", // Extra small screens
-//                     sm: "0.875rem", // Small screens
-//                     md: "1rem", // Medium screens
-//                     lg: "1.125rem", // Large screens
-//                     xl: "1.25rem", // Extra large screens
-//                   },
-//                   marginTop: "10px",
-//                   fontWeight: "bold",
-//                 }}
-//               >
-//                 {person.name}
-//               </Typography>
-//             </Box>
-//           ))}
-//         </Box>
-//       </Box>
-//     </Box>
-//   );
-// }
-
-// export default NetworkMarquee;
