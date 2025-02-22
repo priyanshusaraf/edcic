@@ -94,7 +94,7 @@ const PrincipalNote = () => {
           <div className="text-content">
             <h3>REVEREND FATHER DOMINIC SAVIO SJ</h3>
             <div>
-              <span className="quote-marks">“</span>
+              <span className="quote-marks">'</span>
               <p>
                 The power to think differently and ahead of the times for the
                 betterment of mankind is what sets entrepreneurs apart. India’s
@@ -106,7 +106,7 @@ const PrincipalNote = () => {
                 students realize their potential as individuals and world
                 citizens.
               </p>
-              <span className="quote-marks">”</span>
+              <span className="quote-marks">'</span>
             </div>
           </div>
         </div>

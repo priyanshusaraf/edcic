@@ -27,6 +27,7 @@ const Navbar = () => {
     { text: "Home", url: "/" },
     { text: "About Us", url: "/about" },
     { text: "Initiatives", url: "/initiatives" },
+    { text: "Envisage", url: "/envisage" },
     { text: "Team", url: "/team" },
     { text: "Contact", url: "/contact" },
   ];

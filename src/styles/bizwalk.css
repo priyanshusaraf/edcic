@@ -17,23 +17,27 @@
   font-size: 3rem;
   font-weight: bold;
   color: #3fa9f5;
+  text-align: center;
 }
 
 .bizwalk__subtitle {
   font-size: 2rem;
+  text-align: center;
   font-weight: bold;
+  margin: 30px;
   color: white;
 }
 
 .bizwalk__description {
   font-size: 1.2rem;
+  text-align: center;
   line-height: 1.6;
   margin-top: 20px;
 }
 
 .bizwalk__images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 15px;
   margin-top: 30px;
   max-width: 1200px;

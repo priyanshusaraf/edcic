@@ -1,13 +1,20 @@
 import React from "react";
 import "../styles/SeedStories.css";
+import SeedStoriesBg from "../assets/seed_stories_image.jpg"; // Correct background image import
 import SeedStories1 from "../assets/seedStories.png";
 
 const SeedStories = () => {
   return (
     <div className="seedStories">
-      <div className="seedStories__headerView">
+      {/* Parallax Background Section */}
+      <div
+        className="seedStories__parallax"
+        style={{ backgroundImage: `url(${SeedStoriesBg})` }}
+      >
         <h1 className="seedStories__heading">Seed Stories</h1>
       </div>
+
+      {/* Video Section */}
       <div className="seedStories__videoSection">
         <h1 className="seedStories__heading">Watch Our Latest Video Here!</h1>
         <a
@@ -32,6 +39,7 @@ const SeedStories = () => {
         </button>
       </div>
 
+      {/* Middle Section */}
       <div className="seedStories__middlePart">
         <p className="seedStories__intro">WHAT IS SEED STORIES?</p>
         <div className="seedStories__story">
@@ -41,23 +49,19 @@ const SeedStories = () => {
             className="seedStories__img"
           />
           <p className="seedStories__description">
-            what the fuck is seed stories bro fuck it we going lorem ipsum with
-            this one fam Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Ea rem possimus, error voluptate nemo quas dolore, eligendi
-            quos, aspernatur aliquid saepe blanditiis amet vitae est fugiat?
-            Dolore cumque eum dolores!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rem
+            possimus, error voluptate nemo quas dolore, eligendi quos,
+            aspernatur aliquid saepe blanditiis amet vitae est fugiat? Dolore
+            cumque eum dolores!
           </p>
         </div>
 
-        {/* Add YouTube video thumbnail */}
-
         <div className="seedStories__story">
           <p className="seedStories__description">
-            what the fuck is seed stories bro fuck it we going lorem ipsum with
-            this one fam Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Ea rem possimus, error voluptate nemo quas dolore, eligendi
-            quos, aspernatur aliquid saepe blanditiis amet vitae est fugiat?
-            Dolore cumque eum dolores!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rem
+            possimus, error voluptate nemo quas dolore, eligendi quos,
+            aspernatur aliquid saepe blanditiis amet vitae est fugiat? Dolore
+            cumque eum dolores!
           </p>
           <img
             src={SeedStories1}
@@ -65,6 +69,7 @@ const SeedStories = () => {
             className="seedStories__img"
           />
         </div>
+
         <div className="seedStories__story">
           <img
             src={SeedStories1}
@@ -72,11 +77,10 @@ const SeedStories = () => {
             className="seedStories__img"
           />
           <p className="seedStories__description">
-            what the fuck is seed stories bro fuck it we going lorem ipsum with
-            this one fam Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Ea rem possimus, error voluptate nemo quas dolore, eligendi
-            quos, aspernatur aliquid saepe blanditiis amet vitae est fugiat?
-            Dolore cumque eum dolores!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rem
+            possimus, error voluptate nemo quas dolore, eligendi quos,
+            aspernatur aliquid saepe blanditiis amet vitae est fugiat? Dolore
+            cumque eum dolores!
           </p>
         </div>
       </div>

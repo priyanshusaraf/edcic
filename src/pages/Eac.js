@@ -1,7 +1,50 @@
-// src/pages/EacPage.js
 import React from "react";
 import EacBanner from "../components/EacBanner";
 import "../styles/EacPage.css";
+
+// Import speaker images explicitly
+import VC1 from "../assets/eac_vc/VC1.jpg";
+import VC2 from "../assets/eac_vc/VC2.jpg";
+import VC3 from "../assets/eac_vc/VC3.jpg";
+import VC4 from "../assets/eac_vc/VC4.jpg";
+
+// Import investor pitch images
+import image1 from "../assets/eac/img1.JPG";
+import image2 from "../assets/eac/img2.JPG";
+import image3 from "../assets/eac/img3.JPG";
+import image4 from "../assets/eac/img4.JPG";
+
+// Import speaker session images
+import speaker1 from "../assets/eac/speakerSession/eac_img5.png";
+import speaker2 from "../assets/eac/speakerSession/eac_img6.png";
+import speaker3 from "../assets/eac/speakerSession/eac_img7.png";
+
+// Import mentorship images
+import mentor1 from "../assets/eac/mentorship/eac_img1.JPG";
+import mentor2 from "../assets/eac/mentorship/eac_img2.JPG";
+import mentor3 from "../assets/eac/mentorship/eac_img3.JPG";
+import mentor4 from "../assets/eac/mentorship/eac_img4.JPG";
+
+// Array of panel discussion speakers with imported images
+const panelSpeakers = [
+  { id: 1, name: "Parag Dhol", image: VC1 },
+  { id: 2, name: "Ankit Agarwal", image: VC2 },
+  { id: 3, name: "Rohit Bafna", image: VC4 },
+  { id: 4, name: "Madanmohan Rao", image: VC3 },
+];
+
+// Array for investor pitch images
+const investorPitchImages = [image1, image2, image3, image4];
+
+// Array for mentorship images
+const mentorshipImages = [mentor1, mentor2, mentor3, mentor4];
+
+// Array for featured speaker session images
+const speakerSessionImages = [
+  { id: 1, name: "Speaker 1", image: speaker1 },
+  { id: 2, name: "Speaker 2", image: speaker2 },
+  { id: 3, name: "Speaker 3", image: speaker3 },
+];
 
 const EacPage = () => {
   return (
@@ -22,151 +65,89 @@ const EacPage = () => {
           empower young and budding entrepreneurs through a 3-day curriculum
           involving a series of workshops by industry experts providing
           competency in the strategic decision processes of a start-up, panel
-          discussions and a platform to pitch their startups to eminent
-          investors followed by an opportunity of networking to mobilize their
+          discussions, and a platform to pitch their startups to eminent
+          investors followed by an opportunity for networking to mobilize their
           feedback and guidance.
         </p>
       </section>
+
+      {/* Updated Mentorship Section with Correct Images */}
       <section className="eac-mentorship">
         <h2 className="eac-mentorship__title">
           MENTORSHIP THROUGH STARTUP CLASSES
         </h2>
         <p className="eac-mentorship__text">
-          With the help of Entrepreneurship Awareness Camp we seek to empower
-          young and budding entrepreneurs through a 3-day curriculum involving a
-          series of workshops by industry experts providing competency in the
-          strategic decision processes of a start-up, panel discussions and a
-          platform to pitch their startups to eminent investors followed by an
-          opportunity of networking to mobilize their feedback and guidance. We
-          aim at creating a synergy between creativity and implementation by
+          We aim at creating a synergy between creativity and implementation by
           providing invaluable guidance crucial for the start-ups in their
           embryonic stage.
         </p>
         <div className="eac-mentorship__images">
-          <img
-            src="/assets/image1.jpg"
-            alt="Mentorship session 1"
-            className="eac-mentorship__image"
-          />
-          <img
-            src="/assets/image2.jpg"
-            alt="Mentorship session 2"
-            className="eac-mentorship__image"
-          />
-          <img
-            src="/assets/image3.jpg"
-            alt="Mentorship session 3"
-            className="eac-mentorship__image"
-          />
-          <img
-            src="/assets/image4.jpg"
-            alt="Mentorship session 4"
-            className="eac-mentorship__image"
-          />
+          {mentorshipImages.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Mentorship session ${index + 1}`}
+              className="eac-mentorship__image"
+            />
+          ))}
         </div>
       </section>
-      <section className="eac-panel-discussion" style={{ height: "100vh" }}>
-        <div className="eac-panel-discussion__header">
-          <img
-            src="/assets/panel-logo.png"
-            alt="Panel Discussion Logo"
-            className="eac-panel-discussion__logo"
-          />
-          <h2 className="eac-panel-discussion__title">PANEL DISCUSSION</h2>
-        </div>
-        <div className="eac-panel-discussion__cards">
-          <div className="eac-panel-discussion__card"></div>
-          <div className="eac-panel-discussion__card"></div>
-          <div className="eac-panel-discussion__card"></div>
-          <div className="eac-panel-discussion__card"></div>
+
+      {/* Panel Discussion Section */}
+      <section className="eac-featured-speakers">
+        <h2 className="eac-featured-speakers__title">Panel Discussion</h2>
+        <div className="eac-featured-speakers__carousel">
+          <div className="eac-featured-speakers__cards">
+            {panelSpeakers.map((speaker) => (
+              <div key={speaker.id} className="eac-featured-speakers__card">
+                <img
+                  src={speaker.image}
+                  alt={speaker.name}
+                  className="eac-featured-speakers__image"
+                />
+                <p className="eac-featured-speakers__name">{speaker.name}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
-      <section
-        className="eac-investor-pitch"
-        style={{
-          height: "100vh",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          padding: "40px",
-        }}
-      >
-        <div
-          className="eac-investor-pitch__text"
-          style={{ flex: "1", paddingRight: "20px", color: "#004e87" }}
-        >
+
+      {/* Updated Investor Pitch Section with Images */}
+      <section className="eac-investor-pitch">
+        <div className="eac-investor-pitch__text">
           <h2 className="eac-investor-pitch__title">INVESTOR PITCH</h2>
           <p>
             This section highlights the importance of pitching to investors,
             showcasing creative ideas and business models.
           </p>
         </div>
-        <div
-          className="eac-investor-pitch__cards"
-          style={{
-            flex: "1",
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: "20px",
-          }}
-        >
-          <div
-            className="eac-investor-pitch__card"
-            style={{
-              backgroundColor: "#004e87",
-              height: "200px",
-              borderRadius: "12px",
-            }}
-          ></div>
-          <div
-            className="eac-investor-pitch__card"
-            style={{
-              backgroundColor: "#004e87",
-              height: "200px",
-              borderRadius: "12px",
-            }}
-          ></div>
-          <div
-            className="eac-investor-pitch__card"
-            style={{
-              backgroundColor: "#004e87",
-              height: "200px",
-              borderRadius: "12px",
-            }}
-          ></div>
-          <div
-            className="eac-investor-pitch__card"
-            style={{
-              backgroundColor: "#004e87",
-              height: "200px",
-              borderRadius: "12px",
-            }}
-          ></div>
+        <div className="eac-investor-pitch__cards">
+          {investorPitchImages.map((image, index) => (
+            <div key={index} className="eac-investor-pitch__card">
+              <img
+                src={image}
+                alt={`Investor Pitch ${index + 1}`}
+                className="eac-investor-pitch__image"
+              />
+            </div>
+          ))}
         </div>
       </section>
-      <section className="eac-featured-speakers">
-        <h2 className="eac-featured-speakers__title">Featured Speakers</h2>
-        <div className="eac-featured-speakers__carousel">
-          <button className="eac-featured-speakers__arrow eac-featured-speakers__arrow--left">
-            &#9664;
-          </button>
-          <div className="eac-featured-speakers__cards">
-            <div className="eac-featured-speakers__card">
-              <div className="eac-featured-speakers__image"></div>
-              <p className="eac-featured-speakers__name">Name of the Speaker</p>
+
+      {/* Updated Featured Speakers Section with Speaker Images */}
+      <section className="eac-panel-discussion">
+        <h2 className="eac-panel-discussion__title">Featured Speakers</h2>
+        <div className="eac-panel-discussion__cards">
+          {speakerSessionImages.map((speaker) => (
+            <div key={speaker.id} className="eac-panel-discussion__card">
+              <img
+                src={speaker.image}
+                alt={speaker.name}
+                className="eac-panel-discussion__image"
+              />
+              <p className="eac-panel-discussion__name">{speaker.name}</p>
             </div>
-            <div className="eac-featured-speakers__card">
-              <div className="eac-featured-speakers__image"></div>
-              <p className="eac-featured-speakers__name">Name of the Speaker</p>
-            </div>
-            <div className="eac-featured-speakers__card">
-              <div className="eac-featured-speakers__image"></div>
-              <p className="eac-featured-speakers__name">Name of the Speaker</p>
-            </div>
-          </div>
-          <button className="eac-featured-speakers__arrow eac-featured-speakers__arrow--right">
-            &#9654;
-          </button>
+          ))}
         </div>
       </section>
     </div>

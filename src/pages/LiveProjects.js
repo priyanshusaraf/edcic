@@ -1,6 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-
+import img1 from "../assets/lp1.jpg";
+import img2 from "../assets/lp2.jpg";
+import img3 from "../assets/lp3.jpg";
+import img4 from "../assets/lp4.jpg";
+import img5 from "../assets/lp5.jpg";
 const LiveProjectsSection = styled.section`
   background: linear-gradient(to bottom, #00004c, #101070);
   color: #fff;
@@ -97,26 +101,23 @@ const LiveProjects = () => {
         <h2>Benefits of Live Projects for Startups</h2>
         <div className="benefits-grid">
           <div className="benefit-card">
-            <img src="https://via.placeholder.com/80" alt="Valuable Guidance" />
+            <img src={img1} alt="Valuable Guidance" />
             <h3>Valuable Guidance</h3>
           </div>
           <div className="benefit-card">
-            <img src="https://via.placeholder.com/80" alt="Fresh Talent" />
+            <img src={img2} alt="Fresh Talent" />
             <h3>Fresh Talent</h3>
           </div>
           <div className="benefit-card">
-            <img
-              src="https://via.placeholder.com/80"
-              alt="Increased Productivity"
-            />
+            <img src={img3} alt="Increased Productivity" />
             <h3>Increased Productivity</h3>
           </div>
           <div className="benefit-card">
-            <img src="https://via.placeholder.com/80" alt="Brand Awareness" />
+            <img src={img4} alt="Brand Awareness" />
             <h3>Brand Awareness</h3>
           </div>
           <div className="benefit-card">
-            <img src="https://via.placeholder.com/80" alt="Talent Scouting" />
+            <img src={img5} alt="Talent Scouting" />
             <h3>Talent Scouting</h3>
           </div>
         </div>

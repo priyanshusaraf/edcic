@@ -7,10 +7,14 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import "../styles/contact.css";
+import ContactBg from "../assets/contact_background.jpeg"; // Import background image
 
 const Contact = () => {
   return (
-    <div className="contact__container">
+    <div
+      className="contact__container"
+      style={{ backgroundImage: `url(${ContactBg})` }}
+    >
       <h2 className="contact__heading">Contact Us Now!</h2>
       <div className="contact__icons">
         <a

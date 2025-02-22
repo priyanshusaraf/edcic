@@ -18,7 +18,6 @@ const Initium = () => {
         </div>
         <div className="initium__logo-container">
           <img src={initiumLogo} alt="Initium Logo" className="initium__logo" />
-          b
         </div>
       </div>
       <Stats />

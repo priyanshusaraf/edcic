@@ -47,6 +47,7 @@ function App() {
         <Route path="/events/eac" element={<EacPage />} />
         <Route path="/eac" element={<EacPage />} />
         <Route path="/bizwalk" element={<Bizwalk />} />
+        <Route path="/initiatives/bizwalk" element={<Bizwalk />} />
         <Route path="/initiatives/seed-stories" element={<SeedStories />} />
         <Route path="/start-up-voice" element={<SeedStories />} />
         <Route path="/initiatives/edf" element={<Edf />} />
@@ -62,7 +63,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
         <Route path="/360" element={<Workshop360 />} />
         <Route path="/envisage" element={<Envisage />} />
-        <Route path="/envisage" element={<Envisage />} />
+        <Route path="/initiatives/envisage" element={<Envisage />} />
         <Route path="/events/workshop" element={<Workshop360 />} />
         <Route path="/events/360" element={<Workshop360 />} />
         <Route path="/events/elevator" element={<Elevator />} />

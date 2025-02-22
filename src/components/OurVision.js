@@ -1,16 +1,10 @@
 import React from "react";
 import { Box } from "@mui/material";
 import "../styles/OurVision.css";
+
 const OurVision = () => {
   return (
-    <Box
-      sx={{
-        py: 5,
-        textAlign: "center",
-        color: "#fff",
-        background: "#001d4a",
-      }}
-    >
+    <Box className="ourVision__container">
       <div className="ourVision__content">
         <p className="ourVision__heading">Our Vision</p>
         <p className="ourVision__body">

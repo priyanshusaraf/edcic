@@ -4,53 +4,41 @@
   color: white;
 }
 
+/* Parallax Background Section */
+.seedStories__parallax {
+  width: 100%;
+  height: 90vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+/* Overlay for Better Readability */
+.seedStories__parallax::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+}
+
+/* Ensure text is above the overlay */
 .seedStories__heading {
   font-size: 50px;
+  font-weight: bold;
+  z-index: 1;
+  text-transform: uppercase;
 }
 
-.seedStories__headerView {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.seedStories__middlePart {
-  font-size: 35px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 100px;
-}
-
-.seedStories__intro {
-  color: white;
-  margin: 50px;
-}
-
-.seedStories__story {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.seedStories__description {
-  font-size: 20px;
-  width: 40%;
-}
-.seedStories__img {
-  object-fit: contain;
-  width: 700px;
-  height: 300px;
-}
-
-.seedStories__story {
-  margin: 50px;
-}
-
+/* Video Section */
 .seedStories__videoSection {
   display: flex;
   align-items: center;
@@ -90,4 +78,76 @@
 
 .seedStories__subscribeButton:hover {
   background-color: #cc0000;
+}
+
+/* Middle Section */
+.seedStories__middlePart {
+  font-size: 35px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.seedStories__intro {
+  color: white;
+  margin: 50px;
+}
+
+.seedStories__story {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+.seedStories__description {
+  font-size: 20px;
+  width: 40%;
+}
+
+.seedStories__img {
+  object-fit: contain;
+  width: 700px;
+  height: 300px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .seedStories__parallax {
+    height: 50vh;
+  }
+
+  .seedStories__heading {
+    font-size: 35px;
+  }
+
+  .seedStories__videoThumbnail {
+    width: 100%;
+  }
+
+  .seedStories__story {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .seedStories__description {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .seedStories__img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.seedStories__headerView {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

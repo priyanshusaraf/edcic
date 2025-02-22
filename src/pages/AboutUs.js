@@ -15,14 +15,11 @@ const AboutUs = () => {
     <>
       <Container maxWidth="100%" sx={{ py: 5 }}>
         {/* Intro Section */}
-        <Typography
-          variant="h2"
-          align="center"
-          gutterBottom
-          sx={{ color: "white" }}
-        >
-          About Us
-        </Typography>
+        <div className="aboutUsLanding">
+          <Typography variant="h2" align="center" gutterBottom>
+            About Us
+          </Typography>
+        </div>
         <div className="aboutUsTimeline">
           <Typography
             variant="h2"

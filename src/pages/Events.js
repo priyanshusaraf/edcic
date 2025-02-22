@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom"; // Import Link from React Router DOM
-import prismLogo from "../assets/prism.jpeg";
-import elevatorLogo from "../assets/elevator.jpeg";
-import enterpriseLogo from "../assets/entreprise.jpeg";
-import workshopLogo from "../assets/workshop.png";
+import prismLogo from "../assets/prism.jpg";
+import elevatorLogo from "../assets/elevator.jpg";
+import enterpriseLogo from "../assets/entreprise.jpg";
+import workshopLogo from "../assets/360.jpg";
 import initiumLogo from "../assets/initium.jpeg";
-import eacLogo from "../assets/eac.jpeg";
+import eacLogo from "../assets/eac.jpg";
 
 const EventsContainer = styled.div`
   text-align: center;

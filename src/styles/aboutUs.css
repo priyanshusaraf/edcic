@@ -42,3 +42,11 @@
     margin-left: -5%;
   }
 }
+
+.aboutUsLanding {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black !important;
+}

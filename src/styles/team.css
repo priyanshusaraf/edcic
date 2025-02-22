@@ -37,7 +37,7 @@
   background: white;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 220px;
+  width: 300px;
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -131,8 +131,7 @@
   }
 
   .team__card {
-    width: 100%;
-    padding: 10px;
+    width: 250px;
   }
 
   .team__memberName {

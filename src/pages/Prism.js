@@ -59,10 +59,6 @@ const Prism = () => {
         <h2>Our Partners</h2>
         <div className="prism__partnersGrid">
           <div className="prism__partner">
-            <img src={faceLogo} alt="Magazine Partner" />
-            <p>Magazine Partner</p>
-          </div>
-          <div className="prism__partner">
             <img src={caMonkLogo} alt="Skill Partner" />
             <p>Skill Partner</p>
           </div>

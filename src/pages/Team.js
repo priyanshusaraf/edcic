@@ -25,7 +25,7 @@ import img18 from "../assets/boardImages/img18.png";
 import img19 from "../assets/boardImages/img19.png";
 import img20 from "../assets/boardImages/img20.png";
 import img21 from "../assets/boardImages/img21.png";
-import img22 from "../assets/boardImages/img22.png";
+import img23 from "../assets/boardImages/img24.png";
 
 const boardMembers = [
   {
@@ -46,15 +46,7 @@ const boardMembers = [
     linkedin: "https://linkedin.com/in/aarav-mittal-75585024a",
     image: img2,
   },
-  {
-    id: 3,
-    name: "Vedant Saboo",
-    position: "Joint Secretary",
-    email: "saboovedant1@gmail.com",
-    phone: "9830953922",
-    linkedin: "https://linkedin.com/in/vedant-saboo-5a7bb9231",
-    image: img3,
-  },
+
   {
     id: 4,
     name: "Rishab Dugar",
@@ -63,6 +55,15 @@ const boardMembers = [
     phone: "8697957671",
     linkedin: "https://linkedin.com/in/rishab-dugar-2685911b5",
     image: img4,
+  },
+  {
+    id: 3,
+    name: "Vedant Saboo",
+    position: "Joint Secretary",
+    email: "saboovedant1@gmail.com",
+    phone: "9830953922",
+    linkedin: "https://linkedin.com/in/vedant-saboo-5a7bb9231",
+    image: img3,
   },
   {
     id: 5,
@@ -82,15 +83,7 @@ const boardMembers = [
     linkedin: "https://linkedin.com/in/ashwin-nair-879b03250",
     image: img5,
   },
-  {
-    id: 7,
-    name: "Karan Daga",
-    position: "Research & Finance",
-    email: "kdaga007@gmail.com",
-    phone: "8697710113",
-    linkedin: "https://linkedin.com/in/karandaga",
-    image: img7,
-  },
+
   {
     id: 8,
     name: "Harshvardhan Jalan",
@@ -99,6 +92,15 @@ const boardMembers = [
     phone: "98306034422",
     linkedin: "https://linkedin.com/in/harshvardhan-jalan-320aa0256",
     image: img6,
+  },
+  {
+    id: 7,
+    name: "Karan Daga",
+    position: "Research & Finance",
+    email: "kdaga007@gmail.com",
+    phone: "8697710113",
+    linkedin: "https://linkedin.com/in/karandaga",
+    image: img7,
   },
   {
     id: 9,
@@ -165,7 +167,44 @@ const boardMembers = [
   },
   {
     id: 16,
-    name: "Aditi",
+    name: "Aditi Agarwal",
+    position: "Working Committee Member",
+    email: "harshitamundra01@gmail.com",
+    phone: "9432166081",
+    linkedin: "https://linkedin.com/in/harshitamundra",
+    image: img19,
+  },
+  {
+    id: 18,
+    name: "Devansh Roongta",
+    position: "Working Committee Member",
+    email: "harshitamundra01@gmail.com",
+    phone: "9432166081",
+    linkedin: "https://linkedin.com/in/harshitamundra",
+    image: img23,
+  },
+
+  {
+    id: 17,
+    name: "Prachi Modi",
+    position: "Working Committee Member",
+    email: "harshitamundra01@gmail.com",
+    phone: "9432166081",
+    linkedin: "https://linkedin.com/in/harshitamundra",
+    image: img21,
+  },
+  {
+    id: 19,
+    name: "Riya A. Jain",
+    position: "Working Committee Member",
+    email: "riyaajain.2301@gmail.com",
+    phone: "9830249456",
+    linkedin: "https://www.linkedin.com/in/riya-a-jain-63450b20a",
+    image: img20,
+  },
+  {
+    id: 20,
+    name: "Ishita Bagri",
     position: "Editorial",
     email: "harshitamundra01@gmail.com",
     phone: "9432166081",
@@ -173,59 +212,23 @@ const boardMembers = [
     image: img16,
   },
   {
-    id: 17,
-    name: "Prachi",
-    position: "Editorial",
-    email: "harshitamundra01@gmail.com",
-    phone: "9432166081",
-    linkedin: "https://linkedin.com/in/harshitamundra",
-    image: img17,
-  },
-  {
-    id: 18,
-    name: "Devansh",
-    position: "Editorial",
+    id: 21,
+    name: "Sooryam Goenka",
+    position: "Working Committee Member",
     email: "harshitamundra01@gmail.com",
     phone: "9432166081",
     linkedin: "https://linkedin.com/in/harshitamundra",
     image: img18,
   },
-  {
-    id: 19,
-    name: "riya",
-    position: "Editorial",
-    email: "harshitamundra01@gmail.com",
-    phone: "9432166081",
-    linkedin: "https://linkedin.com/in/harshitamundra",
-    image: img19,
-  },
-  {
-    id: 20,
-    name: "ishita",
-    position: "Editorial",
-    email: "harshitamundra01@gmail.com",
-    phone: "9432166081",
-    linkedin: "https://linkedin.com/in/harshitamundra",
-    image: img20,
-  },
-  {
-    id: 21,
-    name: "Sooryam",
-    position: "Editorial",
-    email: "harshitamundra01@gmail.com",
-    phone: "9432166081",
-    linkedin: "https://linkedin.com/in/harshitamundra",
-    image: img21,
-  },
 
   {
     id: 22,
-    name: "kriti",
-    position: "Editorial",
+    name: "Kriti Mohta",
+    position: "Working Committee Member",
     email: "harshitamundra01@gmail.com",
     phone: "9432166081",
     linkedin: "https://linkedin.com/in/harshitamundra",
-    image: img22,
+    image: img17,
   },
 ];
 
