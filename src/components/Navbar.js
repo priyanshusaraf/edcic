@@ -30,6 +30,7 @@ const Navbar = () => {
     { text: "Envisage", url: "/envisage" },
     { text: "Team", url: "/team" },
     { text: "Contact", url: "/contact" },
+    { text: "Our Network", url: "/network" },
   ];
 
   const theme = useTheme();

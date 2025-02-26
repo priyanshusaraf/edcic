@@ -1,6 +1,6 @@
 import React from "react";
-import prismLogo from "../assets/prism.png"; // Update with actual image path
-import prismLogo2 from "../assets/prism2.png"; // Update with actual image path
+import prismLogo from "../assets/prismwhite.jpg"; // Update with actual image path
+import prismLogo2 from "../assets/prismpurple.jpg"; // Update with actual image path
 import faceLogo from "../assets/face_logo.png"; // Replace with actual paths
 import caMonkLogo from "../assets/ca_monk.jpeg";
 import edugraphLogo from "../assets/edugraph.jpeg";

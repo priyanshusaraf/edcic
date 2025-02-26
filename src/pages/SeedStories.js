@@ -1,7 +1,9 @@
 import React from "react";
 import "../styles/SeedStories.css";
 import SeedStoriesBg from "../assets/seed_stories_image.jpg"; // Correct background image import
-import SeedStories1 from "../assets/seedStories.png";
+import SeedStories1 from "../assets/ss4.jpg";
+import SeedStories2 from "../assets/ss1.jpg";
+import SeedStories3 from "../assets/ss2.jpg";
 
 const SeedStories = () => {
   return (
@@ -64,7 +66,7 @@ const SeedStories = () => {
             cumque eum dolores!
           </p>
           <img
-            src={SeedStories1}
+            src={SeedStories2}
             alt="seed stories image"
             className="seedStories__img"
           />
@@ -72,7 +74,7 @@ const SeedStories = () => {
 
         <div className="seedStories__story">
           <img
-            src={SeedStories1}
+            src={SeedStories3}
             alt="seed stories image"
             className="seedStories__img"
           />

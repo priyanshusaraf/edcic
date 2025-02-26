@@ -41,9 +41,9 @@ const mentorshipImages = [mentor1, mentor2, mentor3, mentor4];
 
 // Array for featured speaker session images
 const speakerSessionImages = [
-  { id: 1, name: "Speaker 1", image: speaker1 },
-  { id: 2, name: "Speaker 2", image: speaker2 },
-  { id: 3, name: "Speaker 3", image: speaker3 },
+  { id: 1, name: "Tripti Shinghal Somani", image: speaker1 },
+  { id: 2, name: "Ish Anand", image: speaker2 },
+  { id: 3, name: "Prashanth Tandon", image: speaker3 },
 ];
 
 const EacPage = () => {
@@ -117,8 +117,17 @@ const EacPage = () => {
         <div className="eac-investor-pitch__text">
           <h2 className="eac-investor-pitch__title">INVESTOR PITCH</h2>
           <p>
-            This section highlights the importance of pitching to investors,
-            showcasing creative ideas and business models.
+            The Investor Session at the Entrepreneurship Awareness Camp (EAC),
+            organized by EDCIC, serves as a transformative opportunity for
+            aspiring entrepreneurs to scale their ideas. With a history of
+            raising ₹25 lakhs for startups, this platform has proven to be a
+            catalyst for growth and success.
+            <br />
+            <br /> A standout success story is Tea Fit, a startup that secured
+            investment during EAC and later gained national recognition on Shark
+            Tank India. EAC’s dynamic environment brings together seasoned
+            investors, mentors, and ambitious founders, fostering innovation,
+            collaboration, and sustainable business development.
           </p>
         </div>
         <div className="eac-investor-pitch__cards">

@@ -1,11 +1,6 @@
 import React from "react";
-import "../styles/whatIsInitium.css";
-import img1 from "../assets/initium1.png";
-import img2 from "../assets/initium2.png";
-import img3 from "../assets/initium3.png";
-import img4 from "../assets/initium4.png";
-import img5 from "../assets/initium5.png";
-import img6 from "../assets/initium6.png";
+import "../styles/registrationProcess.css";
+import img1 from "../assets/whatIsInitium.png";
 
 const WhatIsInitium = () => {
   return (
@@ -15,31 +10,6 @@ const WhatIsInitium = () => {
         <div className="whatIsInitium__images">
           <img
             src={img1}
-            alt="Initium Event"
-            className="whatIsInitium__image"
-          />
-          <img
-            src={img2}
-            alt="Initium Event"
-            className="whatIsInitium__image"
-          />
-          <img
-            src={img3}
-            alt="Initium Event"
-            className="whatIsInitium__image"
-          />
-          <img
-            src={img4}
-            alt="Initium Event"
-            className="whatIsInitium__image"
-          />
-          <img
-            src={img5}
-            alt="Initium Event"
-            className="whatIsInitium__image"
-          />
-          <img
-            src={img6}
             alt="Initium Event"
             className="whatIsInitium__image"
           />

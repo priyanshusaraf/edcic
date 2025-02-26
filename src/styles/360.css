@@ -39,7 +39,6 @@
 .workshop360__logo {
   width: 250px;
   height: auto;
-  filter: brightness(0) invert(1);
 }
 
 /* Section 2: Description */

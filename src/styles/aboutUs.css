@@ -1,3 +1,46 @@
+.aboutUsLanding {
+  width: 100vw;
+  margin: 0;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white !important;
+  position: relative;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  overflow: hidden; /* Prevents extra spacing issues */
+}
+
+/* Background Image Fix */
+.aboutUsLanding::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../assets/aboutusbg.jpg") no-repeat center center/cover;
+  filter: brightness(0.5);
+  z-index: -1;
+}
+
+/* Ensure full-width for main containers */
+.aboutUsTimeline {
+  width: 100vw !important;
+  margin: 0 !important;
+  padding: 20px;
+}
+
+/* Fix padding/margin issues in the main container */
+.aboutUsContainer {
+  width: 100vw;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .aboutUsTimeline {
   height: 100%;
   background: linear-gradient(to bottom, #0c0b65, #010250);
@@ -43,10 +86,6 @@
   }
 }
 
-.aboutUsLanding {
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black !important;
+.aboutUs__container {
+  margin-left: -24px;
 }

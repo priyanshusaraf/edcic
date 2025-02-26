@@ -12,8 +12,8 @@ import "react-vertical-timeline-component/style.min.css";
 
 const AboutUs = () => {
   return (
-    <>
-      <Container maxWidth="100%" sx={{ py: 5 }}>
+    <div className="aboutUs__container">
+      <Container maxWidth="100%">
         {/* Intro Section */}
         <div className="aboutUsLanding">
           <Typography variant="h2" align="center" gutterBottom>
@@ -266,7 +266,7 @@ const AboutUs = () => {
           transition={{ duration: 0.5 }}
         ></motion.div>
       </Container>
-    </>
+    </div>
   );
 };
 

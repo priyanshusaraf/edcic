@@ -6,10 +6,25 @@ import mentoringIcon from "../assets/mentoring.jpeg";
 import workshopsIcon from "../assets/workshops.jpg";
 import fundraisingIcon from "../assets/fundraising.webp";
 import benefitsIcon from "../assets/benefits.png";
+import elevatorLogo from "../assets/elevatorLogo.png"; // Update with the correct path if needed
 
 const ElevatorInfo = () => {
   return (
     <div className="elevatorInfo__container">
+      {/* Elevator Logo & Registration Section */}
+      <div className="elevatorInfo__header">
+        <img
+          src={elevatorLogo}
+          alt="Elevator The Idea Expo"
+          className="elevatorInfo__logo"
+        />
+        {/* <h2 className="elevatorInfo__registerTitle">Register for :</h2>
+        <div className="elevatorInfo__buttons">
+          <button className="elevatorInfo__button">School Level</button>
+          <button className="elevatorInfo__button">College Level</button>
+        </div> */}
+      </div>
+
       <div className="elevatorInfo__section">
         <h2 className="elevatorInfo__title">What is Elevator?</h2>
         <p className="elevatorInfo__description">
@@ -64,14 +79,6 @@ const ElevatorInfo = () => {
               className="elevatorInfo__icon"
             />
             <p>Fundraising</p>
-          </div>
-          <div className="elevatorInfo__item">
-            <img
-              src={benefitsIcon}
-              alt="Benefits"
-              className="elevatorInfo__icon"
-            />
-            <p>Benefits</p>
           </div>
         </div>
       </div>

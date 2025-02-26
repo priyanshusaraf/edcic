@@ -478,3 +478,138 @@
     align-items: center;
   }
 }
+
+/* Featured Speakers Section */
+.eac-panel-discussion {
+  background-color: #001d4a;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.eac-panel-discussion__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.eac-panel-discussion__cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.eac-panel-discussion__card {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 220px;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.eac-panel-discussion__card:hover {
+  transform: scale(1.05);
+}
+
+.eac-panel-discussion__image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.eac-panel-discussion__name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #001d4a;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .eac-panel-discussion__title {
+    font-size: 2rem;
+  }
+
+  .eac-panel-discussion__cards {
+    gap: 20px;
+  }
+
+  .eac-panel-discussion__card {
+    width: 200px;
+    padding: 15px;
+  }
+
+  .eac-panel-discussion__image {
+    width: 130px;
+    height: 130px;
+  }
+
+  .eac-panel-discussion__name {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .eac-panel-discussion__title {
+    font-size: 1.8rem;
+  }
+
+  .eac-panel-discussion__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .eac-panel-discussion__card {
+    width: 90%;
+    max-width: 250px;
+    padding: 15px;
+  }
+
+  .eac-panel-discussion__image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .eac-panel-discussion__name {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .eac-panel-discussion__title {
+    font-size: 1.5rem;
+  }
+
+  .eac-panel-discussion__cards {
+    gap: 15px;
+  }
+
+  .eac-panel-discussion__card {
+    width: 100%;
+    max-width: 220px;
+    padding: 10px;
+  }
+
+  .eac-panel-discussion__image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .eac-panel-discussion__name {
+    font-size: 0.9rem;
+  }
+}

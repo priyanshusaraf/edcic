@@ -4,6 +4,16 @@
   text-align: center;
   padding: 50px 20px;
 }
+.elevatorInfo__logo {
+  height: 70vh;
+  width: auto;
+}
+.elevatorInfo__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
 .elevatorInfo__section {
   max-width: 800px;

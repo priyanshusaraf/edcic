@@ -22,6 +22,9 @@ const CertificateContainer = styled.div`
     border-radius: 10px; /* Rounded corners for a cleaner look */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add subtle shadow for depth */
   }
+  .certificate__text {
+    padding-bottom: 50px;
+  }
 
   @media (max-width: 768px) {
     .title {
@@ -34,6 +37,15 @@ const Certificate = () => {
   return (
     <CertificateContainer>
       <h1 className="title">Institution’s Innovation Council</h1>
+      <p className="certificate__text">
+        The Institution’s Innovation Council (IIC) at St. Xavier’s College,
+        Kolkata, fosters a dynamic innovation ecosystem, encouraging students to
+        transform ideas into prototypes. It connects students with mentors,
+        industry experts, and research institutions, focusing on bridging
+        scientific research with commercial applications. The IIC aims to drive
+        sustainable development and promote holistic student growth through
+        mentorship, collaboration, and interdisciplinary learning.
+      </p>
       <img
         src={certificateImage}
         alt="Certificate of Establishment"

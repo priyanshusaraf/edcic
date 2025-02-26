@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom"; // Import Link from React Router DOM
-import prismLogo from "../assets/prism.jpg";
+import prismLogo from "../assets/eac/prism.jpg";
 import elevatorLogo from "../assets/elevator.jpg";
 import enterpriseLogo from "../assets/entreprise.jpg";
 import workshopLogo from "../assets/360.jpg";
@@ -110,7 +110,7 @@ const Events = () => {
           <div className="image-container">
             <img src={prismLogo} alt="Prism '24 Logo" />
           </div>
-          <h3>PRISM '24</h3>
+          <h3>PRISM</h3>
           <p>Ignite the Uncharted</p>
         </Link>
         <Link
@@ -157,7 +157,7 @@ const Events = () => {
           <div className="image-container">
             <img src={eacLogo} alt="EAC Logo" />
           </div>
-          <h3>EAC 2024</h3>
+          <h3>EAC</h3>
           <p>Entrepreneurship Awareness Camp</p>
         </Link>
       </div>

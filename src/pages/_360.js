@@ -1,14 +1,34 @@
 import React from "react";
 import "../styles/360.css";
-import workshopLogo from "../assets/workshop.png"; // Ensure this image exists
+import workshopLogo from "../assets/360logo2.png"; // Ensure this image exists
 import personalFinanceImg from "../assets/edf.jpeg"; // Replace with actual image
+import dhairya from "../assets/360/pageDhairyaGangwani_5.png";
+import pawan from "../assets/360/pagePawanLalwani_2.png";
+import shubhang from "../assets/360/pageShubhangiMadan_3.png";
+import vaibhav from "../assets/360/pageVaibhavGoyal_4.png";
+import neil from "../assets/360/pageNeilBorate_1.png";
 
 const pastWorkshops = [
   {
     title: "Workshop on Personal Finance by Mr. Neil Borate",
-    image: personalFinanceImg, // Add more images for other workshops if needed
+    image: neil, // Add more images for other workshops if needed
   },
-  // Add more workshops here as needed
+  {
+    title: "Workshop on Power BI by Mr. Pavan Lalwani",
+    image: pawan,
+  },
+  {
+    title: "Workshop on LinkedIn networking by Ms. Dhairya Gangwani ",
+    image: dhairya,
+  },
+  {
+    title: "Workshop on freelancing by Ms. Shubhangi Madan",
+    image: shubhang,
+  },
+  {
+    title: "Workshop on Artificial Intelligence by Mr. Vaibhav Goyal",
+    image: vaibhav,
+  },
 ];
 
 const Workshop360 = () => {

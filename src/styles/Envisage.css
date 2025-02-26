@@ -1,44 +1,69 @@
+/* General Container Styling */
 .envisage__container {
-  background: linear-gradient(to bottom, #000428, #004e92);
-  color: white;
+  font-family: "Arial", sans-serif;
   text-align: center;
+  background: #f8f8f8;
+  color: #010250;
   padding: 50px 20px;
 }
 
+/* Title Styling */
 .envisage__title {
   font-size: 2.5rem;
   font-weight: bold;
+  color: #0c0b65;
   margin-bottom: 20px;
 }
 
+/* Description Styling */
 .envisage__description {
   font-size: 1.1rem;
-  max-width: 800px;
-  margin: 0 auto 20px;
+  max-width: 900px;
+  margin: 0 auto;
   line-height: 1.6;
 }
 
-.envisage__image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/* PDF Preview and Download Section */
+.envisage__download-section {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
-  justify-content: center;
-  margin-top: 30px;
 }
 
-.envisage__image {
-  width: 100%;
-  height: auto;
+/* PDF Preview Image */
+.envisage__pdf-preview {
+  width: 300px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.envisage__image:hover {
-  transform: scale(1.05);
+/* Download Button */
+.envisage__download-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #0c0b65;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
 }
 
-/* Responsive */
+.envisage__download-btn:hover {
+  background: #010250;
+}
+
+/* Material UI Download Icon */
+.envisage__download-icon {
+  font-size: 1.5rem;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .envisage__title {
     font-size: 2rem;
@@ -48,7 +73,16 @@
     font-size: 1rem;
   }
 
-  .envisage__image-grid {
-    grid-template-columns: 1fr;
+  .envisage__pdf-preview {
+    width: 250px;
+  }
+
+  .envisage__download-btn {
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+
+  .envisage__download-icon {
+    font-size: 1.2rem;
   }
 }

@@ -5,15 +5,15 @@ import { Link } from "react-router-dom";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import edciclogo from "../assets/edcic.png";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 function Footer() {
   const footerLinks = [
     { text: "Home", url: "/" },
     { text: "About Us", url: "/about-us" },
-    { text: "Services", url: "/services" },
+    { text: "Initiatives", url: "/initiatives" },
     { text: "Events", url: "/events" },
-    { text: "Blog", url: "/blog" },
-    { text: "Associations", url: "/associations" },
+    { text: "Envisage", url: "/envisage" },
     { text: "Incubation Centre", url: "/incubation-centre" },
     { text: "Contact", url: "/contact" },
   ];
@@ -24,10 +24,7 @@ function Footer() {
     <div className="footer">
       <div className="footerUp">
         <div className="footerImg">
-          <img
-            src="https://www.edcsxc.com/wp-content/uploads/2022/03/logo.png"
-            alt=""
-          />
+          <img src={edciclogo} alt="" />
         </div>
         <div className="footerLinks">
           <div className="footerLinksText">Site Map</div>

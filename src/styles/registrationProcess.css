@@ -19,10 +19,8 @@
 }
 
 .whatIsInitium__images {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  max-width: 50%;
+  max-width: 100%;
+  padding: 50px;
 }
 
 .whatIsInitium__image {

@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/initium.css";
 import initiumLogo from "../assets/initium.png";
 import Stats from "../components/Stats";
-//import WhatIsInitium from "../components/WhatIsInitium.js"; // Import new sections
+import WhatIsInitium from "../components/WhatIsInitium.js"; // Import new sections
 // import RegistrationProcess from "./components/RegistrationProcess";
 
 const Initium = () => {
@@ -21,6 +21,7 @@ const Initium = () => {
         </div>
       </div>
       <Stats />
+      <WhatIsInitium />
     </div>
   );
 };

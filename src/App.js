@@ -5,7 +5,6 @@ import Navbar from "./components/Navbar";
 import EacPage from "./pages/Eac.js";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
-import IncubationCenter from "./pages/IncubationCentreAnimation.js";
 import Prism from "./pages/Prism";
 import Archives from "./pages/Archives";
 import NotFound from "./pages/NotFound";
@@ -14,10 +13,8 @@ import Elevator from "./pages/Elevator";
 import Initiatives from "./components/Initiatives";
 import Contact from "./pages/Contact";
 import WhatWeDo from "./components/WhatWeDo";
-import EventComponent from "./pages/EventComponent";
 import SeedStories from "./pages/SeedStories";
 import Entreprise from "./pages/Entreprise";
-import linkData from "./assets/linkData";
 import IncubationCentre from "./pages/IncubationCentre.js";
 import Team from "./pages/Team.js";
 import Edf from "./pages/Edf.js";
@@ -25,6 +22,7 @@ import Workshop360 from "./pages/_360";
 import Envisage from "./pages/Envisage";
 import LiveProjects from "./pages/LiveProjects.js";
 import Bizwalk from "./pages/Bizwalk.js";
+import OurNetwork from "./pages/OurNetwork";
 
 function App() {
   return (
@@ -39,6 +37,7 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/events/prism" element={<Prism />} />
+        <Route path="/prism" element={<Prism />} />
         <Route path="/events/initium" element={<Initium />} />
         <Route path="/initium" element={<Initium />} />
         <Route path="/events/elevator" element={<Elevator />} />
@@ -67,21 +66,8 @@ function App() {
         <Route path="/events/workshop" element={<Workshop360 />} />
         <Route path="/events/360" element={<Workshop360 />} />
         <Route path="/events/elevator" element={<Elevator />} />
-        {linkData.map((data, index) => {
-          <Route
-            path={data.path}
-            element={
-              <EventComponent
-                key={index}
-                bannerImg={data.img}
-                eventName={data.title}
-                eventDescription={data.description}
-                bannerAlt={data.title}
-                registrationLink={data.reglink}
-              />
-            }
-          />;
-        })}
+        <Route path="/elevator" element={<Elevator />} />
+        <Route path="/network" element={<OurNetwork />} />
       </Routes>
       <Footer />
     </div>
