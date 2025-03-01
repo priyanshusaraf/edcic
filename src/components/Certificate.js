@@ -21,6 +21,7 @@ const CertificateContainer = styled.div`
     border: 5px solid #ffffff; /* Optional border for the image */
     border-radius: 10px; /* Rounded corners for a cleaner look */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add subtle shadow for depth */
+    object-fit: contain;
   }
   .certificate__text {
     padding-bottom: 50px;

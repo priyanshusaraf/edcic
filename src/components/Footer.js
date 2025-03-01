@@ -38,10 +38,10 @@ function Footer() {
                   to={link.url}
                   sx={{
                     textTransform: "none",
-                    fontSize: "14px",
-                    fontWeight: "bold",
+                    fontSize: "12px",
                   }}
                   onClick={returnToTop}
+                  className="footer__button"
                 >
                   {link.text}
                 </Button>
