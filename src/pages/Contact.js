@@ -32,13 +32,17 @@ const Contact = () => {
           <FontAwesomeIcon icon={faLinkedin} className="contact__icon" />
         </a>
         <a
-          href="https://facebook.com"
+          href="https://www.facebook.com/edcsxc"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faFacebook} className="contact__icon" />
         </a>
-        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.youtube.com/@EDCICSXC"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon icon={faYoutube} className="contact__icon" />
         </a>
       </div>
