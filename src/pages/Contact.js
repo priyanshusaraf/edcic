@@ -18,14 +18,14 @@ const Contact = () => {
       <h2 className="contact__heading">Contact Us Now!</h2>
       <div className="contact__icons">
         <a
-          href="https://instagram.com"
+          href="https://instagram.com/edcicsxc"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faInstagram} className="contact__icon" />
         </a>
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/company/entrepreneurship-development-cell-st.-xavier's-college-autonomous-kolkata/posts/?feedView=all"
           target="_blank"
           rel="noopener noreferrer"
         >
