@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import heroImage from "../assets/edcic_team.jpeg"; // Ensure the correct path
-import cloudImage from "../assets/cloud.png"; // Add cloud image
+import heroImage from "../assets/edcic_team.jpeg";
+import cloudImage from "../assets/cloud.png";
 
 const HeroSection = styled.section`
   display: flex;
@@ -215,9 +215,9 @@ const HomeHeroSection = () => {
         <button className="know-more-btn">Know More</button>
       </a>
       {/* Cloud Overlay */}
-      <div className="cloud-overlay">
+      {/* <div className="cloud-overlay">
         <img src={cloudImage} alt="Cloud" className="cloud" />
-      </div>
+      </div> */}
     </HeroSection>
   );
 };
