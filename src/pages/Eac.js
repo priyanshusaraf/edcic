@@ -1,5 +1,6 @@
 import React from "react";
 import EacBanner from "../components/EacBanner";
+import EACDetails from "../components/EACDetails";
 import "../styles/EacPage.css";
 
 // Import speaker images explicitly
@@ -49,9 +50,10 @@ const speakerSessionImages = [
 const EacPage = () => {
   return (
     <div className="eac-page">
-      <div className="eac-banner-container">
-        <EacBanner />
-      </div>
+      {/* <div className="eac-banner-container"> */}
+      <EacBanner />
+      <EACDetails />
+      {/* </div> */}
       <section className="eac-description">
         <h2 className="eac-description__title">WHAT IS EAC?</h2>
         <p className="eac-description__text">

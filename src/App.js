@@ -12,7 +12,6 @@ import Initium from "./pages/Initium";
 import Elevator from "./pages/Elevator";
 import Initiatives from "./components/Initiatives";
 import Contact from "./pages/Contact";
-import WhatWeDo from "./components/WhatWeDo";
 import SeedStories from "./pages/SeedStories";
 import Entreprise from "./pages/Entreprise";
 import IncubationCentre from "./pages/IncubationCentre.js";
@@ -23,6 +22,9 @@ import Envisage from "./pages/Envisage";
 import LiveProjects from "./pages/LiveProjects.js";
 import Bizwalk from "./pages/Bizwalk.js";
 import OurNetwork from "./pages/OurNetwork";
+import Gallery from "./pages/Gallery";
+import OurAssociations from "./pages/OurAssociations";
+import EacBanner from "./components/EacBanner";
 
 function App() {
   return (
@@ -32,7 +34,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/initiatives" element={<Initiatives />} />
-        <Route path="/what-we-do" element={<WhatWeDo />} />
         <Route path="/archives" element={<Archives />} />
         <Route path="/team" element={<Team />} />
         <Route path="/contact" element={<Contact />} />
@@ -68,6 +69,9 @@ function App() {
         <Route path="/events/elevator" element={<Elevator />} />
         <Route path="/elevator" element={<Elevator />} />
         <Route path="/network" element={<OurNetwork />} />
+        <Route path="/eac-banner" element={<EacBanner />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/associations" element={<OurAssociations />} />
       </Routes>
       <Footer />
     </div>

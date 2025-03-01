@@ -55,7 +55,7 @@ const Prism = () => {
       </section>
 
       {/* Partners Section */}
-      <section className="prism__partners">
+      {/* <section className="prism__partners">
         <h2>Our Partners</h2>
         <div className="prism__partnersGrid">
           <div className="prism__partner">
@@ -83,7 +83,7 @@ const Prism = () => {
             <p>Event Partner</p>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

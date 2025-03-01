@@ -22,7 +22,7 @@ function Home() {
       <Initiatives />
       <Certificate />
       {/* <OurTeam /> */}
-      <NetworkMarquee />
+      {/* <NetworkMarquee /> */}
     </div>
   );
 }

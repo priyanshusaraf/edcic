@@ -1,18 +1,22 @@
-// src/components/EacBanner.js
 import React from "react";
 import "../styles/EacBanner.css";
-import eacLogo from "../assets/eaclongblue.png"; // Update the path to your image if needed
+import eacBg from "../assets/eacBg.png"; // Ensure this image is placed correctly in assets
 
-const EacBanner = () => {
+const EACBanner = () => {
   return (
-    <div className="eac-banner">
+    <div className="eacBanner">
       <img
-        src={eacLogo}
-        alt="Entrepreneurship Awareness Camp Logo"
-        className="eac-banner__logo"
+        src={eacBg}
+        alt="Entrepreneurship Awareness Camp"
+        className="eacBanner__image"
       />
+      <div className="eacBanner__overlay">
+        <p className="eacBanner__subtitle">EDCIC'S Flagship Event</p>
+        <h1 className="eacBanner__title">ENTREPRENEURSHIP AWARENESS CAMP</h1>
+        <p className="eacBanner__location">St. Xavier’s College, Kolkata</p>
+      </div>
     </div>
   );
 };
 
-export default EacBanner;
+export default EACBanner;

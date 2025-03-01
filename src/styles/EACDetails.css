@@ -1,0 +1,135 @@
+.eacDetails {
+  width: 100%;
+  text-align: center;
+  padding: 80px 0px 0px 0px;
+  background: linear-gradient(to bottom, #1d5b98, white);
+  margin-top: -2%;
+}
+
+.eacDetails__section {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+}
+
+.eacDetails__title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-left: 8.5%;
+  color: white;
+  margin-bottom: 40px;
+}
+
+/* FLEXBOX FOR PROPER NUMBER + TEXT ALIGNMENT */
+.eacDetails__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px auto;
+  width: 85%;
+  gap: 20px;
+}
+
+/* NUMBER STYLING */
+.eacDetails__number {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #1a4c7a;
+  flex-shrink: 0;
+  width: 60px;
+  text-align: center;
+}
+
+/* TEXT BOX */
+.eacDetails__text {
+  background: #1a4c7a;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  width: 100%;
+  text-align: left;
+  font-weight: 500;
+}
+.eacDetails__section_2 {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: right;
+}
+
+.eacDetails__title_2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 40px;
+  margin-right: 7.5%;
+}
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .eacDetails__title {
+    font-size: 3rem;
+  }
+
+  .eacDetails__item {
+    width: 90%;
+    gap: 15px;
+  }
+
+  .eacDetails__number {
+    font-size: 3rem;
+    width: 50px;
+  }
+
+  .eacDetails__text {
+    font-size: 1.4rem;
+    padding: 18px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .eacDetails__title {
+    font-size: 2.5rem;
+  }
+
+  .eacDetails__item {
+    width: 95%;
+    gap: 12px;
+  }
+
+  .eacDetails__number {
+    font-size: 2.5rem;
+    width: 45px;
+  }
+
+  .eacDetails__text {
+    font-size: 1.2rem;
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .eacDetails__title {
+    font-size: 2rem;
+  }
+
+  .eacDetails__item {
+    flex-direction: row;
+    width: 95%;
+    gap: 8px;
+  }
+
+  .eacDetails__number {
+    font-size: 2rem;
+    width: 40px;
+  }
+
+  .eacDetails__text {
+    font-size: 1rem;
+    padding: 12px 15px;
+    width: 100%;
+  }
+}

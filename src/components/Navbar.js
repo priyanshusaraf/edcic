@@ -26,11 +26,11 @@ const Navbar = () => {
   const navbarLinks = [
     { text: "Home", url: "/" },
     { text: "About Us", url: "/about" },
-    { text: "Initiatives", url: "/initiatives" },
-    { text: "Envisage", url: "/envisage" },
     { text: "Team", url: "/team" },
-    { text: "Contact", url: "/contact" },
     { text: "Our Network", url: "/network" },
+    { text: "Gallery", url: "/gallery" },
+    { text: "Contact", url: "/contact" },
+    { text: "Our Associations", url: "/associations" },
   ];
 
   const theme = useTheme();

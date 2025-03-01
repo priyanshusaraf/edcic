@@ -1,54 +1,92 @@
-/* src/styles/EacBanner.css */
-.eac-banner {
-  background-color: #004e87;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 80%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+.eacBanner {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
 }
 
-.eac-banner__logo {
+.eacBanner__image {
+  width: 100%;
   height: auto;
-  width: auto;
-  margin-right: 20px;
-  background-color: white;
-  padding: 5px;
+  display: block;
 }
 
-.eac-banner__title {
-  font-size: 2rem;
+.eacBanner__overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to top, #1d5b98, transparent);
+  color: white;
+  text-align: left;
+  padding: 50px 80px;
+}
+
+.eacBanner__subtitle {
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.eacBanner__title {
+  font-size: 3rem;
   font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px 0;
+  line-height: 1.2;
 }
 
-/* src/styles/EacPage.css */
-
-.eac-description {
-  background-color: white;
-  color: #004e87;
-  padding: 40px 20px;
-  margin: 20px auto;
-  max-width: 900px;
-  text-align: center;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-top: 4px solid #004e87;
-  border-bottom: 4px solid #004e87;
+.eacBanner__location {
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
-.eac-description__title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .eacBanner__overlay {
+    padding: 40px;
+  }
+
+  .eacBanner__title {
+    font-size: 2.5rem;
+  }
+
+  .eacBanner__subtitle {
+    font-size: 1.2rem;
+  }
+
+  .eacBanner__location {
+    font-size: 1.3rem;
+  }
 }
 
-.eac-description__text {
-  font-size: 1rem;
-  line-height: 1.6;
+@media (max-width: 768px) {
+  .eacBanner__overlay {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .eacBanner__title {
+    font-size: 2rem;
+  }
+
+  .eacBanner__subtitle,
+  .eacBanner__location {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .eacBanner__overlay {
+    padding: 20px;
+  }
+
+  .eacBanner__title {
+    font-size: 1.8rem;
+  }
+
+  .eacBanner__subtitle,
+  .eacBanner__location {
+    font-size: 1rem;
+  }
 }

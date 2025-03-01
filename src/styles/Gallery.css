@@ -1,0 +1,72 @@
+/* General styling */
+.gallery {
+  text-align: center;
+  padding: 20px;
+  max-width: 1200px; /* Limit the overall width of the gallery */
+  margin: 0 auto; /* Center the gallery on the page */
+}
+
+.gallery__heading {
+  font-size: 2.5rem;
+  margin: 120px 0 20px 0;
+  color: #333;
+}
+
+/* Main grid container */
+.gallery__images {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(
+    6,
+    1fr
+  ); /* 6-column grid to span different layouts */
+  grid-auto-rows: minmax(
+    150px,
+    auto
+  ); /* Reduce the row height for smaller images */
+}
+
+.gallery__image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.gallery__image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .gallery__images {
+    grid-template-columns: repeat(
+      4,
+      1fr
+    ); /* Reduce columns on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery__images {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on small screens */
+  }
+}
+
+/* Alternate between rows of 2 and 3 images */
+.gallery__images img:nth-child(6n + 1),
+.gallery__images img:nth-child(6n + 2) {
+  grid-column: span 3; /* Span 3 columns for first two images in every 6 */
+}
+
+.gallery__images img:nth-child(6n + 3),
+.gallery__images img:nth-child(6n + 4),
+.gallery__images img:nth-child(6n + 5) {
+  grid-column: span 2; /* Span 2 columns for the next three images */
+}
+
+.gallery__images img:nth-child(6n + 6) {
+  grid-column: span 3; /* Last image in every 6 spans 3 columns */
+}
