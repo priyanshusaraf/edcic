@@ -67,8 +67,8 @@ const boardMembers = [
   },
   {
     id: 5,
-    name: "Raima Chaterjee Ray",
-    position: "Incubation Lead",
+    name: "Raima Chatterjee Ray",
+    position: "Incubation Head",
     email: "raimachatterjeeray@gmail.com",
     phone: "9038900958",
     linkedin: "https://linkedin.com/in/raima-chatterjee-ray-91009324b/",
@@ -77,7 +77,7 @@ const boardMembers = [
   {
     id: 6,
     name: "Ashwin Nair",
-    position: "Startup & Innovation Lead",
+    position: "Startup & Innovation Coordinator and Creative Head",
     email: "ashwin40nair@gmail.com",
     phone: "8420144823",
     linkedin: "https://linkedin.com/in/ashwin-nair-879b03250",
@@ -87,7 +87,7 @@ const boardMembers = [
   {
     id: 8,
     name: "Harshvardhan Jalan",
-    position: "Research Lead",
+    position: "Research and Prototype Head",
     email: "harshvardhanjalan03@gmail.com",
     phone: "98306034422",
     linkedin: "https://linkedin.com/in/harshvardhan-jalan-320aa0256",
@@ -96,7 +96,7 @@ const boardMembers = [
   {
     id: 7,
     name: "Karan Daga",
-    position: "Research & Finance",
+    position: "Research and Prototype Head & Finance Head",
     email: "kdaga007@gmail.com",
     phone: "8697710113",
     linkedin: "https://linkedin.com/in/karandaga",
@@ -105,7 +105,7 @@ const boardMembers = [
   {
     id: 9,
     name: "Kashvi Khaitan",
-    position: "Finance Lead",
+    position: "Finance Head",
     email: "kashvikhaitan11@gmail.com",
     phone: "8981506421",
     linkedin: "https://linkedin.com/in/kashvi-khaitan-0007b9258",
@@ -114,7 +114,7 @@ const boardMembers = [
   {
     id: 10,
     name: "Bhawika Mittal",
-    position: "Marketing Lead",
+    position: "Marketing Head",
     email: "mittalbhawika@gmail.com",
     phone: "7319317458",
     linkedin: "https://linkedin.com/in/bhawika-mittal-9693a722a",
@@ -123,7 +123,7 @@ const boardMembers = [
   {
     id: 11,
     name: "Muskan Jain",
-    position: "Marketing & Creative",
+    position: "Marketing & Creative Head",
     email: "7114.muskanjain@gmail.com",
     phone: "6291177018",
     linkedin: "https://linkedin.com/in/muskanjain",
@@ -132,7 +132,7 @@ const boardMembers = [
   {
     id: 12,
     name: "Drishti Khemka",
-    position: "Public Relations",
+    position: "Public Relations Head",
     email: "kmpldrishti@gmail.com",
     phone: "9732291000",
     linkedin: "https://linkedin.com/in/drishti-khemka-019086237",
@@ -141,7 +141,7 @@ const boardMembers = [
   {
     id: 13,
     name: "Palak Daga",
-    position: "Public Relations",
+    position: "Public Relations Head",
     email: "palakdaga1401@gmail.com",
     phone: "9339007477",
     linkedin: "https://linkedin.com/in/palak-daga-0874411ba",
@@ -150,7 +150,7 @@ const boardMembers = [
   {
     id: 14,
     name: "Pranit Parasrampuria",
-    position: "Editorial",
+    position: "Editorial Head",
     email: "pranit2405@gmail.com",
     phone: "8777674050",
     linkedin: "https://linkedin.com/in/pranit01",
@@ -159,7 +159,7 @@ const boardMembers = [
   {
     id: 15,
     name: "Harshita Mundra",
-    position: "Editorial",
+    position: "Editorial Head",
     email: "harshitamundra01@gmail.com",
     phone: "9432166081",
     linkedin: "https://linkedin.com/in/harshitamundra",
@@ -205,7 +205,7 @@ const boardMembers = [
   {
     id: 20,
     name: "Ishita Bagri",
-    position: "Editorial",
+    position: "Working Committee Member",
     email: "harshitamundra01@gmail.com",
     phone: "9432166081",
     linkedin: "https://linkedin.com/in/harshitamundra",

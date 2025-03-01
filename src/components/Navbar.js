@@ -28,9 +28,9 @@ const Navbar = () => {
     { text: "About Us", url: "/about" },
     { text: "Team", url: "/team" },
     { text: "Our Network", url: "/network" },
+    { text: "Our Associations", url: "/associations" },
     { text: "Gallery", url: "/gallery" },
     { text: "Contact", url: "/contact" },
-    { text: "Our Associations", url: "/associations" },
   ];
 
   const theme = useTheme();
