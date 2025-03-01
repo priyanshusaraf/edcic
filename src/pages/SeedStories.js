@@ -51,19 +51,17 @@ const SeedStories = () => {
             className="seedStories__img"
           />
           <p className="seedStories__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rem
-            possimus, error voluptate nemo quas dolore, eligendi quos,
-            aspernatur aliquid saepe blanditiis amet vitae est fugiat? Dolore
-            cumque eum dolores!
+            Introducing Seed Stories, a podcast by the Entrepreneurship
+            Development Cell and Incubation Centre, where we explore the
+            journeys of startup founders—their challenges, breakthroughs, and
+            lessons.
           </p>
         </div>
 
         <div className="seedStories__story">
           <p className="seedStories__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rem
-            possimus, error voluptate nemo quas dolore, eligendi quos,
-            aspernatur aliquid saepe blanditiis amet vitae est fugiat? Dolore
-            cumque eum dolores!
+            Our mission is to inspire and empower aspiring entrepreneurs by
+            sharing real, raw stories of perseverance, passion, and resilience.
           </p>
           <img
             src={SeedStories2}
@@ -79,10 +77,11 @@ const SeedStories = () => {
             className="seedStories__img"
           />
           <p className="seedStories__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rem
-            possimus, error voluptate nemo quas dolore, eligendi quos,
-            aspernatur aliquid saepe blanditiis amet vitae est fugiat? Dolore
-            cumque eum dolores!
+            These stories go beyond building businesses; they’re about the
+            courage to fail, the strength to start over, and the drive to push
+            forward. Whether you're just starting or already on your journey,
+            let Seed Stories ignite your passion and remind you that every step
+            you take brings you closer to making an impact.
           </p>
         </div>
       </div>

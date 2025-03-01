@@ -63,6 +63,74 @@
   font-size: 1.5rem;
 }
 
+/* Editorial Team Section */
+.envisage__team-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2rem 0;
+  color: #1e1e1e;
+}
+
+.envisage__team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.envisage__team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #1e1e1e;
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff;
+  width: 250px;
+  height: 300px;
+  justify-content: space-evenly;
+  transition: transform 0.3s ease-in-out;
+}
+
+.envisage__team-card:hover {
+  transform: scale(1.05);
+}
+
+.envisage__team-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.envisage__team-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1e1e1e;
+  text-align: center;
+  width: 100%;
+}
+
+.envisage__team-role {
+  font-size: 1rem;
+  font-style: italic;
+  color: #555;
+}
+
+/* Ensuring the 7th Image is Center-Aligned */
+.envisage__team-grid:has(.envisage__team-card:nth-child(7)) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .envisage__title {
@@ -84,5 +152,19 @@
 
   .envisage__download-icon {
     font-size: 1.2rem;
+  }
+
+  .envisage__team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .envisage__team-card {
+    width: 200px;
+    height: 280px;
+  }
+
+  .envisage__team-img {
+    width: 100px;
+    height: 100px;
   }
 }

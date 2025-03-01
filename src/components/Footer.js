@@ -10,9 +10,9 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 function Footer() {
   const footerLinks = [
     { text: "Home", url: "/" },
-    { text: "About Us", url: "/about-us" },
+    { text: "About Us", url: "/about" },
     { text: "Initiatives", url: "/initiatives" },
-    { text: "Events", url: "/events" },
+    { text: "Our Associations", url: "/associations" },
     { text: "Envisage", url: "/envisage" },
     { text: "Incubation Centre", url: "/incubation-centre" },
     { text: "Contact", url: "/contact" },

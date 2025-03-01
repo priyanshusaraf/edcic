@@ -74,6 +74,12 @@ const AboutUs = () => {
               >
                 Biztatva Goes National
               </Typography>
+              <Typography
+                variant="subtitle1"
+                className="vertical-timeline-element-subtitle"
+              >
+                2017
+              </Typography>
               <Typography>
                 Biztatva, the first EDC event to expand its reach across India,
                 marked a significant milestone, showcasing the growing impact of
@@ -91,6 +97,12 @@ const AboutUs = () => {
                 className="vertical-timeline-element-title"
               >
                 Entrepreneurship Awareness Camp (EAC)
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                className="vertical-timeline-element-subtitle"
+              >
+                2019
               </Typography>
               <Typography>
                 The first Entrepreneurship Awareness Camp (EAC) was organized to
@@ -110,6 +122,12 @@ const AboutUs = () => {
               >
                 Initium: Collaboration with Placement Cell
               </Typography>
+              <Typography
+                variant="subtitle1"
+                className="vertical-timeline-element-subtitle"
+              >
+                2019
+              </Typography>
               <Typography>
                 In collaboration with the Placement Cell, EDC launched Initium –
                 The Internship Expo, connecting students with top companies and
@@ -128,6 +146,12 @@ const AboutUs = () => {
               >
                 Biztatva to Entreprise
               </Typography>
+              <Typography
+                variant="subtitle1"
+                className="vertical-timeline-element-subtitle"
+              >
+                2020
+              </Typography>
               <Typography>
                 Biztatva was restructured into Entreprise, a national-level
                 entrepreneurial simulation that tests participants' business
@@ -144,6 +168,12 @@ const AboutUs = () => {
                 variant="h5"
                 className="vertical-timeline-element-title"
               >
+                <Typography
+                  variant="subtitle1"
+                  className="vertical-timeline-element-subtitle"
+                >
+                  2020
+                </Typography>
                 IIC Certification Awarded
               </Typography>
               <Typography>
@@ -164,6 +194,12 @@ const AboutUs = () => {
               >
                 Teafit at Shark Tank India
               </Typography>
+              <Typography
+                variant="subtitle1"
+                className="vertical-timeline-element-subtitle"
+              >
+                2020
+              </Typography>
               <Typography>
                 Teafit, a startup hosted at EAC, secured ₹50 lakh for 8% equity
                 after impressing the Sharks on Shark Tank India.
@@ -180,6 +216,12 @@ const AboutUs = () => {
                 className="vertical-timeline-element-title"
               >
                 Rhizospheri-X Incubation
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                className="vertical-timeline-element-subtitle"
+              >
+                2020
               </Typography>
               <Typography>
                 EDC incubated its first startup, Rhizospheri-X, which develops
@@ -199,6 +241,12 @@ const AboutUs = () => {
               >
                 First Patent Filing
               </Typography>
+              <Typography
+                variant="subtitle1"
+                className="vertical-timeline-element-subtitle"
+              >
+                2020
+              </Typography>
               <Typography>
                 EDC marked a significant milestone by facilitating its first
                 patent filing, promoting innovation-driven entrepreneurship.
@@ -215,6 +263,12 @@ const AboutUs = () => {
                 className="vertical-timeline-element-title"
               >
                 Launch of Envisage
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                className="vertical-timeline-element-subtitle"
+              >
+                2020
               </Typography>
               <Typography>
                 EDC launched "Envisage," its official newsletter, offering
@@ -233,6 +287,12 @@ const AboutUs = () => {
               >
                 Bizwalk Initiative
               </Typography>
+              <Typography
+                variant="subtitle1"
+                className="vertical-timeline-element-subtitle"
+              >
+                2020
+              </Typography>
               <Typography>
                 EDC launched Bizwalk, providing students with hands-on exposure
                 to established startups through guided visits, starting with a
@@ -250,6 +310,12 @@ const AboutUs = () => {
                 className="vertical-timeline-element-title"
               >
                 Transformation to EDCIC
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                className="vertical-timeline-element-subtitle"
+              >
+                2020
               </Typography>
               <Typography>
                 EDC transformed into EDCIC with the establishment of a formal

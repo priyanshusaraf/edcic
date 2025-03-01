@@ -158,7 +158,7 @@ const boardMembers = [
   },
   {
     id: 15,
-    name: "Harhita Mundra",
+    name: "Harshita Mundra",
     position: "Editorial",
     email: "harshitamundra01@gmail.com",
     phone: "9432166081",

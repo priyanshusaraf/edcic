@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import certificateImage from "../assets/certificate.jpeg"; // Replace with the actual path to the certificate image
+import certificateImage from "../assets/certificate.png"; // Replace with the actual path to the certificate image
 
 const CertificateContainer = styled.div`
   background-color: #001d4a; /* Dark blue background */

@@ -59,7 +59,7 @@ const Entreprise = () => {
       </section>
 
       {/* Partners Section */}
-      <section className="entreprise__partners">
+      {/* <section className="entreprise__partners">
         <h2>Our Partners</h2>
         <div className="entreprise__partnersGrid">
           <div className="entreprise__partner">
@@ -83,7 +83,7 @@ const Entreprise = () => {
             <p>Teaching Partner</p>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

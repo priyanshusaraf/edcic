@@ -19,12 +19,12 @@
 
 @media screen and (min-width: 768px) {
   .appBar {
-    position: sticky;
+    position: fixed;
   }
 }
 
 @media screen and (min-width: 200px) {
   .appBar {
-    position: sticky;
+    position: fixed;
   }
 }

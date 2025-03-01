@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/IncubationCentre.css";
+import backgroundImage from "../assets/incubation_img.jpg"; // Ensure this image is placed correctly in assets
 import ideaStageIcon from "../assets/ic8.jpg";
 import prototypeStageIcon from "../assets/ic9.jpg";
 import incubationStageIcon from "../assets/ic10.jpg";
@@ -92,7 +93,10 @@ const IncubationCentre = () => {
   return (
     <div className="incubation-centre">
       {/* Incubation Centre Banner */}
-      <div className="incubationCentre__bg">
+      <div
+        className="incubationCentre__bg"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      >
         <p className="incubationCentre__bgText">INCUBATION CENTRE</p>
       </div>
 

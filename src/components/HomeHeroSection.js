@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import heroImage from "../assets/edcic_team.jpeg"; // Replace with the actual path to the image
+import heroImage from "../assets/edcic_team.jpeg"; // Ensure the correct path
+import cloudImage from "../assets/cloud.png"; // Add cloud image
 
 const HeroSection = styled.section`
   display: flex;
@@ -33,6 +34,7 @@ const HeroSection = styled.section`
     font-weight: bold;
     margin-bottom: 20px;
     line-height: 1.2;
+    max-width: 900px;
   }
 
   p {
@@ -45,7 +47,9 @@ const HeroSection = styled.section`
   /* Navigation Links */
   .cta-links {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
     margin-bottom: 40px;
 
     a {
@@ -53,15 +57,16 @@ const HeroSection = styled.section`
       color: #fff;
       font-size: 1rem;
       font-weight: bold;
-      padding: 10px 20px;
+      padding: 12px 20px;
       border: 2px solid #fff;
       border-radius: 30px;
       transition: background 0.3s ease;
+      text-align: center;
+    }
 
-      &:hover {
-        background: #fff;
-        color: #000;
-      }
+    a:hover {
+      background: #fff;
+      color: #000;
     }
   }
 
@@ -76,10 +81,116 @@ const HeroSection = styled.section`
     border-radius: 30px;
     cursor: pointer;
     transition: background 0.3s ease;
+  }
 
-    &:hover {
-      background: #000;
-      color: #fff;
+  .know-more-btn:hover {
+    background: #000;
+    color: #fff;
+  }
+
+  /* Cloud Overlay */
+  .cloud-overlay {
+    position: absolute;
+    top: 50%; /* Adjust to fine-tune positioning */
+    left: 8%; /* Adjust to point at the right person */
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    scale: 1.8;
+  }
+
+  .cloud {
+    width: 120px;
+    opacity: 0.9;
+  }
+
+  .cloud-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    .cta-links {
+      gap: 10px;
+    }
+
+    .know-more-btn {
+      font-size: 0.95rem;
+      padding: 10px 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    .cta-links {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .cta-links a {
+      width: 100%;
+      max-width: 250px;
+      padding: 12px 20px;
+    }
+
+    .know-more-btn {
+      font-size: 0.9rem;
+      padding: 10px 18px;
+      width: 100%;
+      max-width: 250px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+    }
+
+    .cta-links {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .cta-links a {
+      font-size: 0.9rem;
+      padding: 10px 16px;
+      width: 100%;
+      max-width: 250px;
+    }
+
+    .know-more-btn {
+      font-size: 0.85rem;
+      padding: 10px 16px;
+      width: 100%;
+      max-width: 250px;
     }
   }
 `;
@@ -91,10 +202,7 @@ const HomeHeroSection = () => {
       <p>
         The Entrepreneurship Development Cell and Incubation Centre of St.
         Xavier's College (Autonomous), Kolkata seeks to transform how
-        entrepreneurship is perceived in society. We firmly believe that
-        entrepreneurship is the key to fostering innovation in India and
-        promoting the values surrounding entrepreneurship will result in
-        attainment of the full capacity of the youths aptitude.
+        entrepreneurship is perceived in society.
       </p>
       <div className="cta-links">
         <a href="/eac">EAC</a>
@@ -106,6 +214,10 @@ const HomeHeroSection = () => {
       <a href="/about">
         <button className="know-more-btn">Know More</button>
       </a>
+      {/* Cloud Overlay */}
+      <div className="cloud-overlay">
+        <img src={cloudImage} alt="Cloud" className="cloud" />
+      </div>
     </HeroSection>
   );
 };
