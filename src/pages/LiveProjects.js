@@ -4,6 +4,8 @@ import img1 from "../assets/lp1.jpg";
 import img2 from "../assets/lp2.jpg";
 import img3 from "../assets/lp3.jpg";
 import img4 from "../assets/lp4.jpg";
+import { Link } from "react-router-dom";
+import { Button } from "@mui/material";
 import img5 from "../assets/lp5.jpg";
 const LiveProjectsSection = styled.section`
   background: linear-gradient(to bottom, #00004c, #101070);
@@ -126,7 +128,19 @@ const LiveProjects = () => {
       <div className="collaboration-section">
         Wanna collaborate with EDCIC on a Live Project?
       </div>
-      <button className="contact-btn">Contact us</button>
+      <Button
+        component={Link}
+        to="/contact"
+        sx={{
+          textTransform: "none",
+          fontSize: "14px",
+          fontWeight: "bold", // Bold font for desktop links
+          color: "inherit",
+        }}
+        className="contact-btn"
+      >
+        Contact Us
+      </Button>
     </LiveProjectsSection>
   );
 };

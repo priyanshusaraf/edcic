@@ -168,13 +168,13 @@ const AboutUs = () => {
                 variant="h5"
                 className="vertical-timeline-element-title"
               >
-                <Typography
-                  variant="subtitle1"
-                  className="vertical-timeline-element-subtitle"
-                >
-                  2020
-                </Typography>
                 IIC Certification Awarded
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                className="vertical-timeline-element-subtitle"
+              >
+                2021
               </Typography>
               <Typography>
                 The Institution’s Innovation Council (IIC) certification
@@ -198,7 +198,7 @@ const AboutUs = () => {
                 variant="subtitle1"
                 className="vertical-timeline-element-subtitle"
               >
-                2020
+                2022
               </Typography>
               <Typography>
                 Teafit, a startup hosted at EAC, secured ₹50 lakh for 8% equity
@@ -221,7 +221,7 @@ const AboutUs = () => {
                 variant="subtitle1"
                 className="vertical-timeline-element-subtitle"
               >
-                2020
+                2022
               </Typography>
               <Typography>
                 EDC incubated its first startup, Rhizospheri-X, which develops
@@ -245,7 +245,7 @@ const AboutUs = () => {
                 variant="subtitle1"
                 className="vertical-timeline-element-subtitle"
               >
-                2020
+                2023
               </Typography>
               <Typography>
                 EDC marked a significant milestone by facilitating its first
@@ -268,7 +268,7 @@ const AboutUs = () => {
                 variant="subtitle1"
                 className="vertical-timeline-element-subtitle"
               >
-                2020
+                2023
               </Typography>
               <Typography>
                 EDC launched "Envisage," its official newsletter, offering
@@ -291,7 +291,7 @@ const AboutUs = () => {
                 variant="subtitle1"
                 className="vertical-timeline-element-subtitle"
               >
-                2020
+                2023
               </Typography>
               <Typography>
                 EDC launched Bizwalk, providing students with hands-on exposure
@@ -309,17 +309,19 @@ const AboutUs = () => {
                 variant="h5"
                 className="vertical-timeline-element-title"
               >
-                Transformation to EDCIC
+                Seed Stories and Live Projects Initiative
               </Typography>
               <Typography
                 variant="subtitle1"
                 className="vertical-timeline-element-subtitle"
               >
-                2020
+                2024
               </Typography>
               <Typography>
-                EDC transformed into EDCIC with the establishment of a formal
-                incubation center, fostering the growth of promising startups.
+                EDCIC started two new initiatives, Seed Stories and Live
+                Projects. Seed stories is a podcast sharing the unfiltered
+                journeys of startup founders. Live Projects allows members to
+                gain hands-on experience by working for startups.
               </Typography>
             </VerticalTimelineElement>
           </VerticalTimeline>

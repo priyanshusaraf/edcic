@@ -132,7 +132,7 @@ const Events = () => {
           <div className="image-container">
             <img src={enterpriseLogo} alt="Enterprise Logo" />
           </div>
-          <h3>Enterprise</h3>
+          <h3>Entreprise</h3>
           <p>Think Big, Think Global</p>
         </Link>
         <Link
