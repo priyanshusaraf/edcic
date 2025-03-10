@@ -18,81 +18,81 @@ const networkMembers = [
     id: 1,
     name: "Arjun Malhotra",
     image: arjunMalhotra,
-    description:
-      "An industry veteran known for his leadership in the technology sector.",
+    // description:
+    //   "An industry veteran known for his leadership in the technology sector.",
   },
   {
     id: 2,
     name: "Harshita Sabharwal",
     image: harshitaSabharwal,
-    description:
-      "An expert in digital transformation and innovation strategies.",
+    // description:
+    //   "An expert in digital transformation and innovation strategies.",
   },
   {
     id: 3,
     name: "Manoj Kohli",
     image: manojKohli,
-    description:
-      "A visionary business leader with experience in global markets.",
+    // description:
+    //   "A visionary business leader with experience in global markets.",
   },
   {
     id: 4,
     name: "Nayan Mehta",
     image: nayanMehta,
-    description:
-      "A financial strategist with deep expertise in investment banking.",
+    // description:
+    //   "A financial strategist with deep expertise in investment banking.",
   },
   {
     id: 5,
     name: "Philip Kotler",
     image: philipKotler,
-    description:
-      "The father of modern marketing, influencing generations of marketers.",
+    // description:
+    //   "The father of modern marketing, influencing generations of marketers.",
   },
   {
     id: 6,
     name: "Prashant Tandon",
     image: prashantTandon,
-    description: "An entrepreneur shaping the future of health-tech solutions.",
+    // description: "An entrepreneur shaping the future of health-tech solutions.",
   },
   {
     id: 7,
     name: "Sanjeev Bikchandani",
     image: sanjeevBakchandani,
-    description:
-      "A pioneer in online recruitment and startup ecosystem building.",
+    // description:
+    //   "A pioneer in online recruitment and startup ecosystem building.",
   },
   {
     id: 8,
     name: "Soumen Ray",
     image: soumenRay,
-    description:
-      "A finance expert leading corporate growth and expansion strategies.",
+    // description:
+    //   "A finance expert leading corporate growth and expansion strategies.",
   },
   {
     id: 9,
     name: "Sourav Ganguly",
     image: souravGanguly,
-    description:
-      "A legendary sports figure who has revolutionized Indian cricket.",
+    // description:
+    //   "A legendary sports figure who has revolutionized Indian cricket.",
   },
   {
     id: 10,
     name: "Suhail Sameer",
     image: suhailSameer,
-    description: "A business leader in the consumer and fintech industries.",
+    // description: "A business leader in the consumer and fintech industries.",
   },
   {
     id: 11,
     name: "Vivek Sharma",
     image: vivekSharma,
-    description: "A technology and AI enthusiast driving innovation forward.",
+    // description: "A technology and AI enthusiast driving innovation forward.",
   },
   {
     id: 12,
     name: "V Krishnan",
     image: vKrishnan,
-    description: "A mentor and investor in the Indian startup ecosystem.",
+    // description: "A mentor and investor in the Indian startup ecosystem.",
   },
 ];
 
