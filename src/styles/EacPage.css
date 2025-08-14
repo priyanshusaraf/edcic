@@ -1,151 +1,229 @@
-/* src/styles/EacPage.css */
-
+/* Modern EAC Page Styles */
 .eac-page {
-  font-family: "Arial", sans-serif;
-
-  color: white;
-}
-
-/* Banner Section */
-.eac-banner-container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #004e87;
+  font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #1a1a1a;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
 }
 
 /* Description Section */
 .eac-description {
-  background-color: white;
-  color: #004e87;
-  padding: 40px 20px;
-  margin: 0 auto 40px;
-  max-width: 1000px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-top: 4px solid #004e87;
-  border-bottom: 4px solid #004e87;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  color: #2c3e50;
+  padding: 80px 40px;
+  margin: 60px auto;
+  max-width: 1200px;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
   text-align: center;
-  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.eac-description::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
 }
 
 .eac-description__title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
 }
 
 .eac-description__text {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.8;
+  color: #4a5568;
+  max-width: 900px;
+  margin: 0 auto;
+  font-weight: 400;
 }
 
 /* Mentorship Section */
 .eac-mentorship {
-  background-color: #004e87;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
   color: white;
-  padding: 40px 20px;
-  margin: 40px auto;
-  max-width: 1000px;
+  padding: 80px 40px;
+  margin: 60px auto;
+  max-width: 1200px;
   text-align: center;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .eac-mentorship__title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .eac-mentorship__text {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.8;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  opacity: 0.95;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }
 
 .eac-mentorship__images {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
 }
 
 .eac-mentorship__image {
-  width: calc(25% - 10px);
-  max-width: 220px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 300px;
+  border-radius: 16px;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.eac-mentorship__image:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 /* Panel Discussion Section */
-.eac-panel-discussion {
-  background-color: white;
-  color: #004e87;
-  height: 100vh;
-  padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.eac-featured-speakers {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  color: #2c3e50;
+  padding: 80px 40px;
+  margin: 60px auto;
+  max-width: 1200px;
   text-align: center;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
 }
 
-.eac-panel-discussion__header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
+.eac-featured-speakers__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.eac-panel-discussion__logo {
-  width: 80px;
-  height: 80px;
-  margin-right: 15px;
+.eac-featured-speakers__carousel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
 }
 
-.eac-panel-discussion__title {
-  font-size: 2rem;
-  font-weight: bold;
+.eac-featured-speakers__cards {
+  display: contents;
 }
 
-.eac-panel-discussion__cards {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-  flex-wrap: wrap;
+.eac-featured-speakers__card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
 }
 
-.eac-panel-discussion__card {
-  background-color: #004e87;
-  width: 220px;
-  height: 300px;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.eac-featured-speakers__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.eac-featured-speakers__card:hover::before {
+  transform: scaleX(1);
+}
+
+.eac-featured-speakers__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.eac-featured-speakers__image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.eac-featured-speakers__card:hover .eac-featured-speakers__image {
+  transform: scale(1.1);
+}
+
+.eac-featured-speakers__name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-top: 15px;
 }
 
 /* Investor Pitch Section */
 .eac-investor-pitch {
-  height: 100vh;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  color: white;
+  padding: 80px 40px;
+  margin: 60px auto;
+  max-width: 1200px;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 40px;
-  background-color: white;
+  gap: 60px;
 }
 
 .eac-investor-pitch__text {
   flex: 1;
-  padding-right: 20px;
-  color: #004e87;
 }
 
 .eac-investor-pitch__title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.eac-investor-pitch__text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  opacity: 0.95;
 }
 
 .eac-investor-pitch__cards {
@@ -156,454 +234,189 @@
 }
 
 .eac-investor-pitch__card {
-  background-color: #004e87;
-  height: 200px;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* src/styles/EacPage.css */
-
-/* Featured Speakers Section */
-.eac-featured-speakers {
-  background-color: white;
-  text-align: center;
-}
-
-.eac-featured-speakers__title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.eac-featured-speakers__carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-.eac-featured-speakers__cards {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.eac-featured-speakers__card {
-  background-color: #eaeaea;
-  width: 180px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.eac-featured-speakers__image {
-  width: auto;
-  height: 100%;
-  border-radius: 50%;
-  padding: 50px;
-  text-align: center;
-}
-
-.eac-featured-speakers__name {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #004e87;
-}
-
-/* src/styles/EacPage.css */
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  section {
-    padding: 20px 10px;
-  }
-
-  .eac-description__title,
-  .eac-mentorship__title,
-  .eac-panel-discussion__title,
-  .eac-investor-pitch__title,
-  .eac-featured-speakers__title {
-    font-size: 1.5rem;
-  }
-
-  .eac-description__text,
-  .eac-mentorship__text,
-  .eac-investor-pitch__text,
-  .eac-featured-speakers__name {
-    font-size: 0.9rem;
-  }
-
-  .eac-panel-discussion__cards,
-  .eac-featured-speakers__cards,
-  .eac-investor-pitch__cards {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .eac-panel-discussion__card,
-  .eac-featured-speakers__card,
-  .eac-investor-pitch__card {
-    width: 100%;
-    height: auto;
-  }
-
-  .eac-featured-speakers__carousel {
-    flex-direction: column;
-  }
-
-  .eac-featured-speakers__arrow {
-    padding: 8px;
-    font-size: 1.2rem;
-  }
-}
-
-/* Banner Section */
-.eac-banner-container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #004e87;
-}
-
-/* Description Section */
-.eac-description {
-  background-color: white;
-  color: #004e87;
-  padding: 40px 20px;
-  margin: 0 auto 40px;
-  max-width: 1000px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  min-height: 400px;
-}
-
-.eac-description__title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.eac-description__text {
-  font-size: 1rem;
-  line-height: 1.8;
-}
-
-/* Mentorship Section */
-.eac-mentorship {
-  background-color: #004e87;
-  color: white;
-  padding: 40px 20px;
-  margin: 40px auto;
-  max-width: 1000px;
-  text-align: center;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.eac-mentorship__images {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.eac-mentorship__image {
-  width: calc(33% - 10px);
-  max-width: 200px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  object-fit: cover;
-}
-
-.eac-panel-discussion__cards {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.eac-panel-discussion__card {
-  background-color: #004e87;
-  width: 220px;
-  height: 300px;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-@media (min-width: 769px) {
-  .eac-investor-pitch__cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-/* Featured Speakers Section */
-.eac-featured-speakers {
-  background-color: #004e87;
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.eac-featured-speakers__carousel {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.eac-featured-speakers__cards {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.eac-featured-speakers__card {
-  background-color: white;
-  width: 300px; /* Increased width */
-  height: 400px; /* Increased height */
-  padding: 10px; /* Reduced padding */
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Image should fully occupy the top portion of the card */
-.eac-featured-speakers__image {
-  width: 100%; /* Full width of the card */
-  height: 80%; /* Covers most of the card */
-  object-fit: cover; /* Ensures image scales correctly */
-  border-radius: 12px; /* Removes circular cropping */
-}
-
-/* Speaker Name */
-.eac-featured-speakers__name {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #004e87;
-  padding-bottom: 10px;
-}
-
-/* Past Startups Section */
-.eac-past-startups {
-  background-color: #004e87;
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
-  border-top: 4px solid white;
-  border-bottom: 4px solid white;
-}
-
-.eac-past-startups__title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-
-.eac-past-startups__logos {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.eac-past-startups__logo {
-  background-color: white;
-  width: 180px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  object-fit: contain;
-}
-
-@media (max-width: 768px) {
-  section {
-    padding: 20px 10px;
-  }
-
-  .eac-description__title,
-  .eac-mentorship__title,
-  .eac-panel-discussion__title,
-  .eac-investor-pitch__title,
-  .eac-featured-speakers__title,
-  .eac-past-startups__title {
-    font-size: 1.5rem;
-  }
-
-  .eac-description__text,
-  .eac-mentorship__text,
-  .eac-investor-pitch__text {
-    font-size: 0.9rem;
-  }
-
-  .eac-panel-discussion__cards,
-  .eac-investor-pitch__cards {
-    gap: 10px;
-  }
-
-  .eac-panel-discussion__card,
-  .eac-investor-pitch__card {
-    width: 100%;
-  }
-
-  .eac-featured-speakers__carousel {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .eac-featured-speakers__card {
-    width: 100%;
-  }
-
-  .eac-past-startups__logos {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-/* Featured Speakers Section */
-.eac-panel-discussion {
-  background-color: #001d4a;
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.eac-panel-discussion__title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-.eac-panel-discussion__cards {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.eac-panel-discussion__card {
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 220px;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
 
-.eac-panel-discussion__card:hover {
+.eac-investor-pitch__card:hover {
   transform: scale(1.05);
 }
 
+.eac-investor-pitch__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Featured Speakers (Bottom Section) */
+.eac-panel-discussion {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  color: #2c3e50;
+  padding: 80px 40px;
+  margin: 60px auto;
+  max-width: 1200px;
+  text-align: center;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.eac-panel-discussion__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.eac-panel-discussion__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.eac-panel-discussion__card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.eac-panel-discussion__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.eac-panel-discussion__card:hover::before {
+  transform: scaleX(1);
+}
+
+.eac-panel-discussion__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
 .eac-panel-discussion__image {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
 
-  margin-bottom: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.eac-panel-discussion__card:hover .eac-panel-discussion__image {
+  transform: scale(1.1);
 }
 
 .eac-panel-discussion__name {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #001d4a;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-top: 15px;
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .eac-description,
+  .eac-mentorship,
+  .eac-featured-speakers,
+  .eac-investor-pitch,
+  .eac-panel-discussion {
+    margin: 40px 20px;
+    padding: 60px 30px;
+  }
+
+  .eac-description__title,
+  .eac-mentorship__title,
+  .eac-featured-speakers__title,
+  .eac-investor-pitch__title,
   .eac-panel-discussion__title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
-  .eac-panel-discussion__cards {
-    gap: 20px;
+  .eac-investor-pitch {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .eac-panel-discussion__card {
-    width: 200px;
-    padding: 15px;
-  }
-
-  .eac-panel-discussion__image {
-    width: 130px;
-    height: 130px;
-  }
-
-  .eac-panel-discussion__name {
-    font-size: 1.1rem;
+  .eac-investor-pitch__cards {
+    margin-top: 40px;
   }
 }
 
 @media (max-width: 768px) {
+  .eac-description,
+  .eac-mentorship,
+  .eac-featured-speakers,
+  .eac-investor-pitch,
+  .eac-panel-discussion {
+    margin: 30px 15px;
+    padding: 40px 20px;
+    border-radius: 16px;
+  }
+
+  .eac-description__title,
+  .eac-mentorship__title,
+  .eac-featured-speakers__title,
+  .eac-investor-pitch__title,
   .eac-panel-discussion__title {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
+  .eac-description__text,
+  .eac-mentorship__text,
+  .eac-investor-pitch__text p {
+    font-size: 1.1rem;
+  }
+
+  .eac-mentorship__images,
+  .eac-featured-speakers__carousel,
   .eac-panel-discussion__cards {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
-  .eac-panel-discussion__card {
-    width: 90%;
-    max-width: 250px;
-    padding: 15px;
-  }
-
-  .eac-panel-discussion__image {
-    width: 120px;
-    height: 120px;
-  }
-
-  .eac-panel-discussion__name {
-    font-size: 1rem;
+  .eac-investor-pitch__cards {
+    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 480px) {
+  .eac-description__title,
+  .eac-mentorship__title,
+  .eac-featured-speakers__title,
+  .eac-investor-pitch__title,
   .eac-panel-discussion__title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
-  .eac-panel-discussion__cards {
-    gap: 15px;
-  }
-
+  .eac-featured-speakers__card,
   .eac-panel-discussion__card {
-    width: 100%;
-    max-width: 220px;
-    padding: 10px;
+    padding: 20px;
   }
 
+  .eac-featured-speakers__image,
   .eac-panel-discussion__image {
     width: 100px;
     height: 100px;
-  }
-
-  .eac-panel-discussion__name {
-    font-size: 0.9rem;
   }
 }

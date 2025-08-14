@@ -9,13 +9,13 @@ import {
   ListItem,
   ListItemText,
   Box,
-  Typography,
 } from "@mui/material";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import logo from "../assets/logo.jpeg";
+import { NAVBAR_LINKS } from "../constants/navigationLinks";
 import "../styles/navbar.css";
 
 const Navbar = () => {
@@ -23,15 +23,7 @@ const Navbar = () => {
     window.scrollTo(0, 0);
   };
 
-  const navbarLinks = [
-    { text: "Home", url: "/" },
-    { text: "About Us", url: "/about" },
-    { text: "Team", url: "/team" },
-    { text: "Our Network", url: "/network" },
-    { text: "Our Associations", url: "/associations" },
-    { text: "Gallery", url: "/gallery" },
-    { text: "Contact", url: "/contact" },
-  ];
+  const navbarLinks = NAVBAR_LINKS;
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));

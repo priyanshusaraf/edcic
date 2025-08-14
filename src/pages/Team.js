@@ -3,233 +3,275 @@ import board from "../assets/board.jpeg";
 import "../styles/team.css";
 import { Phone, Linkedin, Mail } from "lucide-react";
 
-// Import each board member image manually
-import img1 from "../assets/boardImages/img1.png";
-import img2 from "../assets/boardImages/img2.png";
-import img3 from "../assets/boardImages/img3.png";
-import img4 from "../assets/boardImages/img4.png";
-import img5 from "../assets/boardImages/img5.png";
-import img6 from "../assets/boardImages/img6.png";
-import img7 from "../assets/boardImages/img7.png";
-import img8 from "../assets/boardImages/img8.png";
-import img9 from "../assets/boardImages/img9.png";
-import img10 from "../assets/boardImages/img10.png";
-import img11 from "../assets/boardImages/img11.png";
-import img12 from "../assets/boardImages/img12.png";
-import img13 from "../assets/boardImages/img13.png";
-import img14 from "../assets/boardImages/img14.png";
-import img15 from "../assets/boardImages/img15.png";
-import img16 from "../assets/boardImages/img16.png";
-import img17 from "../assets/boardImages/img17.png";
-import img18 from "../assets/boardImages/img18.png";
-import img19 from "../assets/boardImages/img19.png";
-import img20 from "../assets/boardImages/img20.png";
-import img21 from "../assets/boardImages/img21.png";
-import img23 from "../assets/boardImages/img24.png";
+// Import new team member images
+import aakarshImg from "../newTeam/aakarsh.png";
+import akshatImg from "../newTeam/akshat.png";
+import akshitaImg from "../newTeam/akshita.png";
+import chiragImg from "../newTeam/chirag.png";
+import gouravImg from "../newTeam/gourav.png";
+import harshImg from "../newTeam/harsh.png";
+import hitenImg from "../newTeam/hiten.png";
+import nikunjjImg from "../newTeam/nikunjj.png";
+import nityaImg from "../newTeam/nitya.png";
+import niyatiImg from "../newTeam/niyati.png";
+import pradyumImg from "../newTeam/pradyum.png";
+import raunakImg from "../newTeam/raunak.png";
+import trishaImg from "../newTeam/trisha.png";
+import vatsalImg from "../newTeam/vatsal.png";
+import zaaraImg from "../newTeam/zaara.png";
+import riyaImg from "../newTeam/riya.png";
 
 const boardMembers = [
+
   {
     id: 1,
-    name: "Ansh Arya",
-    position: "Director",
-    email: "ansharya06@gmail.com",
-    phone: "7003308220",
-    linkedin: "http://linkedin.com/in/ansh-arya",
-    image: img1,
+    name: "Riya Jindal",
+    position: "Director", 
+    email: "riyajindal.edcsxc@gmail.com",
+    phone: "9999999999",
+    linkedin: "https://linkedin.com/in/riya",
+    image: riyaImg, 
   },
   {
     id: 2,
-    name: "Aarav Mittal",
+    name: "Akshat Goyal",
     position: "Joint Secretary",
-    email: "mittalaarav966@gmail.com",
-    phone: "7029418318",
-    linkedin: "https://linkedin.com/in/aarav-mittal-75585024a",
-    image: img2,
-  },
-
-  {
-    id: 4,
-    name: "Rishab Dugar",
-    position: "Joint Secretary",
-    email: "rishabdugar1225@gmail.com",
-    phone: "8697957671",
-    linkedin: "https://linkedin.com/in/rishab-dugar-2685911b5",
-    image: img4,
+    email: "akshatgoyal.edcsxc@gmail.com",
+    phone: "6289954835",
+    linkedin: "https://www.linkedin.com/in/akshat-goyal-be8637214",
+    image: akshatImg,
   },
   {
     id: 3,
-    name: "Vedant Saboo",
+    name: "Raunak Khetan",
     position: "Joint Secretary",
-    email: "saboovedant1@gmail.com",
-    phone: "9830953922",
-    linkedin: "https://linkedin.com/in/vedant-saboo-5a7bb9231",
-    image: img3,
+    email: "raunakkhetan.edcsxc@gmail.com",
+    phone: "9674526326",
+    linkedin: "https://www.linkedin.com/in/raunakkhetan",
+    image: raunakImg,
+  },
+  {
+    id: 4,
+    name: "Gourav Saria",
+    position: "Joint Secretary",
+    email: "gouravsaria.edcsxc@gmail.com",
+    phone: "6436049949",
+    linkedin: "https://www.linkedin.com/in/gourav-saria-59b4661b7",
+    image: gouravImg,
   },
   {
     id: 5,
-    name: "Raima Chatterjee Ray",
+    name: "Nikunjj Saraf",
     position: "Incubation Head",
-    email: "raimachatterjeeray@gmail.com",
-    phone: "9038900958",
-    linkedin: "https://linkedin.com/in/raima-chatterjee-ray-91009324b/",
-    image: img15,
+    email: "nikunji.saraf.edcsxc@gmail.com",
+    phone: "9339014884",
+    linkedin: "https://www.linkedin.com/in/nikunji-saraf-7ba644274",
+    image: nikunjjImg,
   },
+  
+  // Second row: Harsh, Zaara, Pradyum
   {
     id: 6,
-    name: "Ashwin Nair",
-    position: "Startup & Innovation Coordinator and Creative Head",
-    email: "ashwin40nair@gmail.com",
-    phone: "8420144823",
-    linkedin: "https://linkedin.com/in/ashwin-nair-879b03250",
-    image: img5,
-  },
-
-  {
-    id: 8,
-    name: "Harshvardhan Jalan",
-    position: "Research and Prototype Head",
-    email: "harshvardhanjalan03@gmail.com",
-    phone: "98306034422",
-    linkedin: "https://linkedin.com/in/harshvardhan-jalan-320aa0256",
-    image: img6,
+    name: "Harsh Chitlangia",
+    position: "Startup and Innovation Head",
+    email: "harshchitlangia.edcsxc@gmail.com",
+    phone: "9830655675",
+    linkedin: "https://www.linkedin.com/in/harsh-chitlangia-b3176a1a4",
+    image: harshImg,
   },
   {
     id: 7,
-    name: "Karan Daga",
-    position: "Research and Prototype Head & Finance Head",
-    email: "kdaga007@gmail.com",
-    phone: "8697710113",
-    linkedin: "https://linkedin.com/in/karandaga",
-    image: img7,
+    name: "Zaara Bux",
+    position: "Startup and Innovation Head",
+    email: "zaarabux.edcsxc@gmail.com",
+    phone: "9836107353",
+    linkedin: "http://linkedin.com/in/zaara-bux-87214328b",
+    image: zaaraImg,
   },
   {
+    id: 8,
+    name: "Pradyum Kothari",
+    position: "Research and Growth Head",
+    email: "pradyumkothari.edcsxc@gmail.com",
+    phone: "9874219884",
+    linkedin: "http://linkedin.com/in/pradyum-kothari",
+    image: pradyumImg,
+  },
+  
+  // Other team members
+  {
     id: 9,
-    name: "Kashvi Khaitan",
-    position: "Finance Head",
-    email: "kashvikhaitan11@gmail.com",
-    phone: "8981506421",
-    linkedin: "https://linkedin.com/in/kashvi-khaitan-0007b9258",
-    image: img8,
+    name: "Akshita Lohia",
+    position: "Research and Growth Head",
+    email: "akshitalohia.edcsxc@gmail.com",
+    phone: "8585834144",
+    linkedin: "https://www.linkedin.com/in/akshita-lohia-27615b2277",
+    image: akshitaImg,
   },
   {
     id: 10,
-    name: "Bhawika Mittal",
-    position: "Marketing Head",
-    email: "mittalbhawika@gmail.com",
-    phone: "7319317458",
-    linkedin: "https://linkedin.com/in/bhawika-mittal-9693a722a",
-    image: img9,
+    name: "Akarsh Nethwewala",
+    position: "Finance Head",
+    email: "akarshnethwewala.edc.sxc@gmail.com",
+    phone: "9874967005",
+    linkedin: "https://www.linkedin.com/in/akarsh-nethwewala-642587267",
+    image: aakarshImg,
   },
+
   {
     id: 11,
-    name: "Muskan Jain",
-    position: "Marketing & Creative Head",
-    email: "7114.muskanjain@gmail.com",
-    phone: "6291177018",
-    linkedin: "https://linkedin.com/in/muskanjain",
-    image: img10,
+    name: "Chirag Jhunjhunwala",
+    position: "Finance Head",
+    email: "chiragjhunjhunwala.edcsxc@gmail.com",
+    phone: "8961041554",
+    linkedin: "http://linkedin.com/in/chirag-jhunjhunwala-61318b28a",
+    image: chiragImg,
   },
   {
     id: 12,
-    name: "Drishti Khemka",
+    name: "Hiten Golchha", 
     position: "Public Relations Head",
-    email: "kmpldrishti@gmail.com",
-    phone: "9732291000",
-    linkedin: "https://linkedin.com/in/drishti-khemka-019086237",
-    image: img11,
+    email: "hitengolchha.edcsxc@gmail.com",
+    phone: "8017605268",
+    linkedin: "https://www.linkedin.com/in/hiten-golchha-2e271a248",
+    image: hitenImg,
   },
   {
     id: 13,
-    name: "Palak Daga",
-    position: "Public Relations Head",
-    email: "palakdaga1401@gmail.com",
-    phone: "9339007477",
-    linkedin: "https://linkedin.com/in/palak-daga-0874411ba",
-    image: img12,
+    name: "Nitya Goyal",
+    position: "Marketing and Creative Head",
+    email: "nityagoyal.edcsxc@gmail.com",
+    phone: "6292190280",
+    linkedin: "https://www.linkedin.com/in/nitya-goyal-ab6152647",
+    image: nityaImg, // Using Trisha image for Nitya to avoid duplication with Riya
   },
   {
     id: 14,
-    name: "Pranit Parasrampuria",
+    name: "Niyati Agarwal",
     position: "Editorial Head",
-    email: "pranit2405@gmail.com",
-    phone: "8777674050",
-    linkedin: "https://linkedin.com/in/pranit01",
-    image: img13,
+    email: "niyatiagarwal.edcsxc@gmail.com",
+    phone: "9334272644",
+    linkedin: "http://linkedin.com/in/niyati-agarwal-gunnu1922",
+    image: niyatiImg,
   },
-  {
-    id: 15,
-    name: "Harshita Mundra",
-    position: "Editorial Head",
-    email: "harshitamundra01@gmail.com",
-    phone: "9432166081",
-    linkedin: "https://linkedin.com/in/harshitamundra",
-    image: img14,
-  },
+
   {
     id: 16,
-    name: "Aditi Agarwal",
-    position: "Working Committee Member",
-    email: "harshitamundra01@gmail.com",
-    phone: "9432166081",
-    linkedin: "https://linkedin.com/in/harshitamundra",
-    image: img19,
+    name: "Vatsal Sadani",
+    position: "Creative Head",
+    email: "vatsalsadani.edcsxc@gmail.com",
+    phone: "9007022739",
+    linkedin: "https://www.linkedin.com/in/vatsal-sadani",
+    image: vatsalImg, // Reusing aakarsh image for vatsal
   },
+  // {
+  //   id: 17,
+  //   name: "Varun Agarwal",
+  //   position: "Team Member",
+  //   email: "varunagarwal.edcsxc@gmail.com",
+  //   phone: "9733742000",
+  //   linkedin: "https://www.linkedin.com/in/varun-agarwal-16559e28b",
+  //   image: aakarshImg,
+  // },
+  // {
+  //   id: 18,
+  //   name: "Khushi Jain",
+  //   position: "Team Member",
+  //   email: "khushijain.edcsxc@gmail.com",
+  //   phone: "7003514718",
+  //   linkedin: "https://www.linkedin.com/in/khushi-jain-a993321a6",
+  //   image: akshitaImg,
+  // },
+  // {
+  //   id: 19,
+  //   name: "Dhruv Mohta",
+  //   position: "Team Member",
+  //   email: "dhruvmohta.edcsxc@gmail.com",
+  //   phone: "6291513970",
+  //   linkedin: "https://www.linkedin.com/in/dhruv-mohta-507b30227b7",
+  //   image: chiragImg,
+  // },
+  // {
+  //   id: 20,
+  //   name: "Siddhant Maheshwari",
+  //   position: "Team Member",
+  //   email: "siddhantmaheshwari.edcsxc@gmail.com",
+  //   phone: "7439597149",
+  //   linkedin: "https://www.linkedin.com/in/siddhant-maheshwari-921932807",
+  //   image: hitenImg,
+  // },
+  // {
+  //   id: 21,
+  //   name: "Krish Jhawar",
+  //   position: "Team Member",
+  //   email: "krishjhawar.edcsxc@gmail.com",
+  //   phone: "9832624173",
+  //   linkedin: "http://linkedin.com/in/krishjhawar",
+  //   image: vatsalImg,
+  // },
+  // {
+  //   id: 22,
+  //   name: "Tanmay Jain",
+  //   position: "Team Member",
+  //   email: "tanmayjain.edcsxc@gmail.com",
+  //   phone: "9693592224",
+  //   linkedin: "https://www.linkedin.com/in/tanmay-jain",
+  //   image: pradyumImg,
+  // },
+  // {
+  //   id: 23,
+  //   name: "Kinjal Basu",
+  //   position: "Team Member",
+  //   email: "kinjalbasu.edcsxc@gmail.com",
+  //   phone: "9831960363",
+  //   linkedin: "https://www.linkedin.com/in/kinjal-basu-9b68a2264",
+  //   image: akshitaImg,
+  // },
   {
-    id: 18,
-    name: "Devansh Roongta",
-    position: "Working Committee Member",
-    email: "harshitamundra01@gmail.com",
-    phone: "9432166081",
-    linkedin: "https://linkedin.com/in/harshitamundra",
-    image: img23,
+    id: 24,
+    name: "Trisha Agarwal",
+    position: "Marketing Head",
+    email: "trishaagarwal.edcsxc@gmail.com",
+    phone: "9830658953",
+    linkedin: "https://www.linkedin.com/in/trisha-agarwal-cc0722929226",
+    image: trishaImg,
   },
-
-  {
-    id: 17,
-    name: "Prachi Modi",
-    position: "Working Committee Member",
-    email: "harshitamundra01@gmail.com",
-    phone: "9432166081",
-    linkedin: "https://linkedin.com/in/harshitamundra",
-    image: img21,
-  },
-  {
-    id: 19,
-    name: "Riya A. Jain",
-    position: "Working Committee Member",
-    email: "riyaajain.2301@gmail.com",
-    phone: "9830249456",
-    linkedin: "https://www.linkedin.com/in/riya-a-jain-63450b20a",
-    image: img20,
-  },
-  {
-    id: 20,
-    name: "Ishita Bagri",
-    position: "Working Committee Member",
-    email: "harshitamundra01@gmail.com",
-    phone: "9432166081",
-    linkedin: "https://linkedin.com/in/harshitamundra",
-    image: img16,
-  },
-  {
-    id: 21,
-    name: "Sooryam Goenka",
-    position: "Working Committee Member",
-    email: "harshitamundra01@gmail.com",
-    phone: "9432166081",
-    linkedin: "https://linkedin.com/in/harshitamundra",
-    image: img18,
-  },
-
-  {
-    id: 22,
-    name: "Kriti Mohta",
-    position: "Working Committee Member",
-    email: "harshitamundra01@gmail.com",
-    phone: "9432166081",
-    linkedin: "https://linkedin.com/in/harshitamundra",
-    image: img17,
-  },
+  // {
+  //   id: 25,
+  //   name: "Gourav Chandak",
+  //   position: "Team Member",
+  //   email: "gauravchandak.edcsxc@gmail.com",
+  //   phone: "6648917178",
+  //   linkedin: "https://www.linkedin.com/in/gaurav-chandak-513202268a",
+  //   image: gouravImg,
+  // },
+  // {
+  //   id: 26,
+  //   name: "Saanvi Khanna",
+  //   position: "Team Member",
+  //   email: "saanvikhanna.edcsxc@gmail.com",
+  //   phone: "9748349819",
+  //   linkedin: "www.linkedin.com/in/saanvi-khanna",
+  //   image: zaaraImg,
+  // },
+  // {
+  //   id: 27,
+  //   name: "Sreshtha Sureka",
+  //   position: "Team Member",
+  //   email: "sreshthasureka.edcsxc@gmail.com",
+  //   phone: "6291651278",
+  //   linkedin: "https://www.linkedin.com/in/sreshtha-sureka",
+  //   image: niyatiImg,
+  // },
+  // {
+  //   id: 28,
+  //   name: "Suhani Jain",
+  //   position: "Team Member",
+  //   email: "suhanijain.edcsxc@gmail.com",
+  //   phone: "8296172732",
+  //   linkedin: "https://www.linkedin.com/in/suhanijain01",
+  //   image: riyaImg,
+  // },
 ];
 
 const Team = () => {

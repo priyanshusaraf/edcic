@@ -13,7 +13,7 @@ const EACBanner = () => {
       <div className="eacBanner__overlay">
         <p className="eacBanner__subtitle">EDCIC'S Flagship Event</p>
         <h1 className="eacBanner__title">ENTREPRENEURSHIP AWARENESS CAMP</h1>
-        <p className="eacBanner__location">St. Xavier’s College, Kolkata</p>
+        <p className="eacBanner__location">St. Xavier’s College (Autonomous), Kolkata</p>
       </div>
     </div>
   );

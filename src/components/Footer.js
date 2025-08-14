@@ -53,29 +53,37 @@ function Footer() {
           <div className="socialsButtons">
             <Button
               sx={{ color: "black" }}
-              component={Link}
-              to="https://www.instagram.com/edcicsxc"
+              component="a"
+              href="https://www.instagram.com/edcicsxc"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <InstagramIcon />
             </Button>{" "}
             <Button
               sx={{ color: "black" }}
-              component={Link}
-              to="https://www.linkedin.com/company/entrepreneurship-development-cell-st.-xavier's-college-autonomous-kolkata/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=in"
+              component="a"
+              href="https://www.linkedin.com/company/entrepreneurship-development-cell-st.-xavier's-college-autonomous-kolkata/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=in"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <LinkedInIcon />
             </Button>{" "}
             <Button
               sx={{ color: "black" }}
-              component={Link}
-              to="https://www.facebook.com/edcsxc"
+              component="a"
+              href="https://www.facebook.com/edcsxc"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FacebookIcon />
             </Button>{" "}
             <Button
               sx={{ color: "black" }}
-              component={Link}
-              to="https://www.youtube.com/@EDCICSXC"
+              component="a"
+              href="https://www.youtube.com/@EDCICSXC"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <YouTubeIcon />
             </Button>
