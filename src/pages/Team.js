@@ -143,7 +143,7 @@ const boardMembers = [
     email: "nityagoyal.edcsxc@gmail.com",
     phone: "6292190280",
     linkedin: "https://www.linkedin.com/in/nitya-goyal-ab6152647",
-    image: nityaImg, // Using Trisha image for Nitya to avoid duplication with Riya
+    image: nityaImg, 
   },
   {
     id: 14,
@@ -233,7 +233,7 @@ const boardMembers = [
     position: "Marketing Head",
     email: "trishaagarwal.edcsxc@gmail.com",
     phone: "9830658953",
-    linkedin: "https://www.linkedin.com/in/trisha-agarwal-cc0722929226",
+    linkedin: "https://www.linkedin.com/in/trisha-agarwal-b5323228b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     image: trishaImg,
   },
   // {
