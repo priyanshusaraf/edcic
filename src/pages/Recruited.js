@@ -112,8 +112,7 @@ const Recruited = () => {
               </div>
               <h1 className="welcome-title">Welcome to EDCIC</h1>
               <p className="welcome-subtitle">
-                You've been selected to join our entrepreneurship community
-              </p>
+Congratulations. Next up, clear probations               </p>
             </div>
 
             {/* Afterparty Ticket */}
@@ -160,22 +159,15 @@ const Recruited = () => {
                 <div className="step-item">
                   <div className="step-number">01</div>
                   <div className="step-content">
-                    <h4>Join Our Community</h4>
-                    <p>Connect with fellow entrepreneurs</p>
+                    <h4>Join Our WhatsApp group</h4>
+                    <p>Someone will send you the link shortly</p>
                   </div>
                 </div>
                 <div className="step-item">
                   <div className="step-number">02</div>
                   <div className="step-content">
-                    <h4>Attend Events</h4>
-                    <p>Participate in workshops and networking</p>
-                  </div>
-                </div>
-                <div className="step-item">
-                  <div className="step-number">03</div>
-                  <div className="step-content">
-                    <h4>Build & Launch</h4>
-                    <p>Turn your ideas into reality</p>
+                    <h4>Get ready for substance abuse</h4>
+                    <p>Or help abuse others if you're into that</p>
                   </div>
                 </div>
               </div>
