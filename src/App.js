@@ -34,6 +34,7 @@ import Bizwalk from "./pages/Bizwalk.js";
 // Network & Association Pages
 import OurNetwork from "./pages/OurNetwork";
 import OurAssociations from "./pages/OurAssociations";
+import Recruited from "./pages/Recruited";
 
 // Special Components
 import EacBanner from "./components/EacBanner";
@@ -88,6 +89,7 @@ function App() {
 
         {/* Special Routes */}
         <Route path="/eac-banner" element={<EacBanner />} />
+        <Route path="/recruited" element={<Recruited />} />
 
         {/* 404 Route */}
         <Route path="*" element={<NotFound />} />

@@ -1,0 +1,407 @@
+/* Main Container */
+.recruited-container {
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* Loading Screen */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.loading-content {
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+.loading-text {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  min-height: 2rem;
+  transition: opacity 0.3s ease;
+}
+
+.progress-container {
+  position: relative;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #0070f3, #00d9ff);
+  transition: width 0.1s ease;
+  border-radius: 1px;
+}
+
+.progress-percentage {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+
+/* Main Content */
+.main-content {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #0070f3, #0051cc);
+  position: relative;
+  overflow: hidden;
+}
+
+.main-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(0, 112, 243, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(0, 217, 255, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(0, 112, 243, 0.2) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Acceptance Header */
+.acceptance-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.status-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #00ff88;
+  border-radius: 50%;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.welcome-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.welcome-subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Ticket Container */
+.ticket-container {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.ticket {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.ticket:hover {
+  transform: translateY(-5px);
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.ticket-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0070f3;
+  letter-spacing: 1px;
+}
+
+.ticket-type {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ticket-main {
+  margin-bottom: 2rem;
+}
+
+.ticket-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.ticket-description {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.ticket-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+.detail-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.ticket-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.qr-placeholder {
+  width: 60px;
+  height: 60px;
+}
+
+.qr-code {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #0070f3, #00d9ff);
+  border-radius: 8px;
+  position: relative;
+}
+
+.qr-code::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.ticket-info p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+  max-width: 200px;
+}
+
+/* Next Steps */
+.next-steps {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.next-steps h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.step-item {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.step-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+}
+
+.step-number {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #00d9ff;
+  margin-bottom: 1rem;
+}
+
+.step-content h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.step-content p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-title {
+    font-size: 2rem;
+  }
+  
+  .ticket {
+    padding: 1.5rem;
+  }
+  
+  .ticket-details {
+    grid-template-columns: 1fr;
+  }
+  
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .content-wrapper {
+    padding: 2rem 1rem;
+  }
+  
+  .loading-text {
+    font-size: 1.25rem;
+  }
+}
+
+/* Expanding Bar Animation */
+.expanding-bar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+}
+
+.expanding-bar {
+  width: 500px;
+  height: 2px;
+  background: linear-gradient(90deg, #0070f3, #00d9ff);
+  animation: expandBar 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  transform-origin: center;
+}
+
+@keyframes expandBar {
+  0% {
+    width: 500px;
+    height: 2px;
+    border-radius: 1px;
+  }
+  25% {
+    width: 100vw;
+    height: 2px;
+    border-radius: 1px;
+  }
+  50% {
+    width: 100vw;
+    height: 50vh;
+    border-radius: 0;
+  }
+  100% {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+}
