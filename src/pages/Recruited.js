@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import BlurText from '../components/BlurText';
+import SplashCursor from '../components/SplashCursor';
 import '../styles/recruited.css';
 
 const Recruited = () => {
@@ -11,6 +13,11 @@ const Recruited = () => {
   const [currentText, setCurrentText] = useState('');
   const [isExpanding, setIsExpanding] = useState(false);
   const [showFinalContent, setShowFinalContent] = useState(false);
+  const [showInteractiveSequence, setShowInteractiveSequence] = useState(false);
+  const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
+  const [showButton, setShowButton] = useState(false);
+  const [buttonPosition, setButtonPosition] = useState({ x: 50, y: 50 });
+  const [textKey, setTextKey] = useState(0);
 
   const loadingTexts = [
     'Are you that smart?',
@@ -19,6 +26,26 @@ const Recruited = () => {
     'Got it.',
     'Great.'
   ];
+
+  const interactiveMessages = [
+    "We had our fun in your interview",
+    "You know what makes us the best?",
+    "We are a family",
+    "And now?",
+    "You're a part of it."
+  ];
+
+  const generateRandomPosition = () => {
+    // Generate random position ensuring button stays within viewport and away from text center
+    let x, y;
+    do {
+      x = Math.random() * 60 + 20; // 20% to 80% of screen width
+      y = Math.random() * 40 + 30; // 30% to 70% of screen height
+      // Ensure button doesn't overlap with center text area (40-60% width, 40-60% height)
+    } while (x > 40 && x < 60 && y > 40 && y < 60);
+    
+    return { x, y };
+  };
 
   useEffect(() => {
     // Loading sequence - 15 seconds total
@@ -65,44 +92,105 @@ const Recruited = () => {
       setCurrentText('');
     }, 15500); // 15 seconds + 500ms buffer
 
-    // Show final content after expansion animation
+    // Start interactive sequence after expansion animation
     setTimeout(() => {
-      setShowFinalContent(true);
+      setShowInteractiveSequence(true);
+      // Start first message
+      setTimeout(() => {
+        setShowButton(true);
+        setButtonPosition(generateRandomPosition());
+      }, 500);
     }, 17000); // 1.5 seconds for expansion animation
   }, []);
 
+  const handleButtonClick = () => {
+    setShowButton(false);
+    
+    // Wait 3 seconds, then show next button or finish sequence
+    setTimeout(() => {
+      if (currentMessageIndex < interactiveMessages.length - 1) {
+        setCurrentMessageIndex(prev => prev + 1);
+        setTextKey(prev => prev + 1); // Force text re-animation
+        setButtonPosition(generateRandomPosition());
+        setTimeout(() => {
+          setShowButton(true);
+        }, 800); // Delay to let text animate first
+      } else {
+        // All messages shown, reveal final content
+        setShowFinalContent(true);
+      }
+    }, 3000);
+  };
+
   return (
     <div className="recruited-container">
+      <SplashCursor />
       {!showFinalContent ? (
-        // Loading Screen with Expansion Animation
-        <div className="loading-screen">
-          <div className="loading-content">
-            {!isExpanding && (
-              <>
-                <div className="loading-text">{currentText}</div>
-                <div className="progress-container">
-                  <div className="progress-bar">
-                    <div 
-                      className="progress-fill" 
-                      style={{ width: `${progress}%` }}
-                    ></div>
+        <>
+          {/* Loading Screen with Expansion Animation */}
+          <div className="loading-screen">
+            <div className="loading-content">
+              {!isExpanding && !showInteractiveSequence && (
+                <>
+                  <div className="loading-text">{currentText}</div>
+                  <div className="progress-container">
+                    <div className="progress-bar">
+                      <div 
+                        className="progress-fill" 
+                        style={{ width: `${progress}%` }}
+                      ></div>
+                    </div>
+                    <div className="progress-percentage">{Math.round(progress)}%</div>
                   </div>
-                  <div className="progress-percentage">{Math.round(progress)}%</div>
+                </>
+              )}
+              
+              {/* Expanding Bar Animation */}
+              {isExpanding && !showInteractiveSequence && (
+                <div className="expanding-bar-container">
+                  <div className="expanding-bar"></div>
                 </div>
-              </>
-            )}
-            
-            {/* Expanding Bar Animation */}
-            {isExpanding && (
-              <div className="expanding-bar-container">
-                <div className="expanding-bar"></div>
-              </div>
-            )}
+              )}
+            </div>
           </div>
-        </div>
+
+          {/* Interactive Sequence Overlay */}
+          {showInteractiveSequence && (
+            <div className="interactive-overlay">
+              <SplashCursor />
+              
+              <div className="message-display">
+                <BlurText
+                  key={textKey}
+                  text={interactiveMessages[currentMessageIndex]}
+                  delay={100}
+                  animateBy="words"
+                  direction="top"
+                  className="interactive-message"
+                />
+              </div>
+              
+              {showButton && (
+                <button
+                  className="interactive-button"
+                  style={{
+                    left: `${buttonPosition.x}%`,
+                    top: `${buttonPosition.y}%`
+                  }}
+                  onClick={handleButtonClick}
+                >
+                  <span className="button-text">Continue</span>
+                  <div className="button-glow"></div>
+                  <div className="button-ripple"></div>
+                </button>
+              )}
+            </div>
+          )}
+        </>
       ) : (
         // Main Content
         <div className="main-content">
+          
           <div className="content-wrapper">
             {/* Acceptance Header */}
             <div className="acceptance-header">
