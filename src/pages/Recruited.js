@@ -16,7 +16,6 @@ const Recruited = () => {
   const [showInteractiveSequence, setShowInteractiveSequence] = useState(false);
   const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
   const [showButton, setShowButton] = useState(false);
-  const [buttonPosition, setButtonPosition] = useState({ x: 50, y: 50 });
   const [textKey, setTextKey] = useState(0);
 
   const loadingTexts = [
@@ -34,18 +33,6 @@ const Recruited = () => {
     "And now?",
     "You're a part of it."
   ];
-
-  const generateRandomPosition = () => {
-    // Generate random position ensuring button stays within viewport and away from text center
-    let x, y;
-    do {
-      x = Math.random() * 60 + 20; // 20% to 80% of screen width
-      y = Math.random() * 40 + 30; // 30% to 70% of screen height
-      // Ensure button doesn't overlap with center text area (40-60% width, 40-60% height)
-    } while (x > 40 && x < 60 && y > 40 && y < 60);
-    
-    return { x, y };
-  };
 
   useEffect(() => {
     // Loading sequence - 15 seconds total
@@ -98,7 +85,6 @@ const Recruited = () => {
       // Start first message
       setTimeout(() => {
         setShowButton(true);
-        setButtonPosition(generateRandomPosition());
       }, 500);
     }, 17000); // 1.5 seconds for expansion animation
   }, []);
@@ -111,7 +97,6 @@ const Recruited = () => {
       if (currentMessageIndex < interactiveMessages.length - 1) {
         setCurrentMessageIndex(prev => prev + 1);
         setTextKey(prev => prev + 1); // Force text re-animation
-        setButtonPosition(generateRandomPosition());
         setTimeout(() => {
           setShowButton(true);
         }, 800); // Delay to let text animate first
@@ -124,7 +109,7 @@ const Recruited = () => {
 
   return (
     <div className="recruited-container">
-      <SplashCursor />
+      
       {!showFinalContent ? (
         <>
           {/* Loading Screen with Expansion Animation */}
@@ -171,18 +156,26 @@ const Recruited = () => {
               </div>
               
               {showButton && (
-                <button
-                  className="interactive-button"
-                  style={{
-                    left: `${buttonPosition.x}%`,
-                    top: `${buttonPosition.y}%`
-                  }}
-                  onClick={handleButtonClick}
-                >
-                  <span className="button-text">Continue</span>
-                  <div className="button-glow"></div>
-                  <div className="button-ripple"></div>
-                </button>
+                <div className="button-container">
+                  <svg style={{position: 'absolute', width: 0, height: 0}}>
+                    <filter width="3000%" x="-1000%" height="3000%" y="-1000%" id="unopaq">
+                      <feColorMatrix
+                        values="1 0 0 0 0 
+                              0 1 0 0 0 
+                              0 0 1 0 0 
+                              0 0 0 3 0"
+                      ></feColorMatrix>
+                    </filter>
+                  </svg>
+                  <div className="backdrop"></div>
+                  <button className="glowing-button" onClick={handleButtonClick}>
+                    <div className="a l"></div>
+                    <div className="a r"></div>
+                    <div className="a t"></div>
+                    <div className="a b"></div>
+                    <div className="text">Continue</div>
+                  </button>
+                </div>
               )}
             </div>
           )}
