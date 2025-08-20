@@ -204,7 +204,7 @@ Congratulations.           </p>
                 <div className="ticket-main">
                   <h2 className="ticket-title">Exclusive Access Pass</h2>
                   <p className="ticket-description">
-                  Join us in conducting the best events, work with the brightest founders, and attend the craziest aftetparties                  </p>
+                  Join us in creating the finest events, visionary founders and craziest aftetparties                  </p>
                 </div>
 
                 <div className="ticket-details">
@@ -235,8 +235,8 @@ Congratulations.           </p>
                 <div className="step-item">
                   <div className="step-number">02</div>
                   <div className="step-content">
-                    <h4>Work towards your dreams and goals</h4>
-                    <p>We're here to help you achieve them</p>
+                    <h4>Own your next move</h4>
+                    <p>Your goals, your pace. We’re here to keep you moving.</p>
                   </div>
                 </div>
               </div>
