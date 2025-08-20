@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import BlurText from '../components/BlurText';
 import SplashCursor from '../components/SplashCursor';
 import '../styles/recruited.css';
 
@@ -19,19 +18,22 @@ const Recruited = () => {
   const [textKey, setTextKey] = useState(0);
 
   const loadingTexts = [
-    "Let's run some verifications",
-    'Analysing answers...',
-    'Arrogance? Ego? Hmm...',
-    'Got it.',
-    "Lets see if you're recruited now"
+    "Running Verifications...",
+    'Evaluating Skills...',
+    'Assessing Potential...',
+    'Measuring Vibes...',
+    "Finalizing Decision...",
+    "Let's see if you made it."
   ];
 
   const interactiveMessages = [
-    "We saw your potential in the interview",
-    "Can you can prove it?",
-    "Regardless, We are a family",
-    "And now?",
-    "You're a part of it."
+    "We've seen your potential",
+    "It's time to prove it.",
+    "We call ourselves a family",
+    "And now...",
+    "You're a part of it.",
+    "It's time to see yourself in an EDCIC T-shirt"
+
   ];
 
   useEffect(() => {
@@ -92,19 +94,16 @@ const Recruited = () => {
   const handleButtonClick = () => {
     setShowButton(false);
     
-    // Wait 3 seconds, then show next button or finish sequence
-    setTimeout(() => {
-      if (currentMessageIndex < interactiveMessages.length - 1) {
-        setCurrentMessageIndex(prev => prev + 1);
-        setTextKey(prev => prev + 1); // Force text re-animation
-        setTimeout(() => {
-          setShowButton(true);
-        }, 800); // Delay to let text animate first
-      } else {
-        // All messages shown, reveal final content
-        setShowFinalContent(true);
-      }
-    }, 3000);
+    if (currentMessageIndex < interactiveMessages.length - 1) {
+      setCurrentMessageIndex(prev => prev + 1);
+      setTextKey(prev => prev + 1); // Force text re-animation
+      setTimeout(() => {
+        setShowButton(true);
+      }, 300); // Short delay for smooth transition
+    } else {
+      // All messages shown, reveal final content
+      setShowFinalContent(true);
+    }
   };
 
   return (
@@ -145,14 +144,12 @@ const Recruited = () => {
               <SplashCursor />
               
               <div className="message-display">
-                <BlurText
+                <h2 
                   key={textKey}
-                  text={interactiveMessages[currentMessageIndex]}
-                  delay={100}
-                  animateBy="words"
-                  direction="top"
-                  className="interactive-message"
-                />
+                  className="interactive-message fade-in"
+                >
+                  {interactiveMessages[currentMessageIndex]}
+                </h2>
               </div>
               
               {showButton && (
@@ -193,7 +190,7 @@ const Recruited = () => {
               </div>
               <h1 className="welcome-title">Welcome to EDCIC</h1>
               <p className="welcome-subtitle">
-Congratulations. Next up, clear probations               </p>
+Congratulations.           </p>
             </div>
 
             {/* Afterparty Ticket */}
@@ -207,8 +204,7 @@ Congratulations. Next up, clear probations               </p>
                 <div className="ticket-main">
                   <h2 className="ticket-title">Exclusive Access Pass</h2>
                   <p className="ticket-description">
-                    Join us for networking events, workshops, and exclusive gatherings
-                  </p>
+                  Join us in conducting the best events, work with the brightest founders, and attend the craziest aftetparties                  </p>
                 </div>
 
                 <div className="ticket-details">
@@ -232,8 +228,8 @@ Congratulations. Next up, clear probations               </p>
                 <div className="step-item">
                   <div className="step-number">01</div>
                   <div className="step-content">
-                    <h4>Join Our WhatsApp group</h4>
-                    <p>Someone will send you the link shortly</p>
+                    <h4>Reply to the Email</h4>
+                    <p>and acknowledge your acceptance</p>
                   </div>
                 </div>
                 <div className="step-item">
