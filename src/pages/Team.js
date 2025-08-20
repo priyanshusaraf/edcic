@@ -28,7 +28,7 @@ const boardMembers = [
     name: "Riya Jindal",
     position: "Director", 
     email: "riyajindal.edcsxc@gmail.com",
-    phone: "9999999999",
+    phone: "9051977777",
     linkedin: "https://linkedin.com/in/riya",
     image: riyaImg, 
   },
