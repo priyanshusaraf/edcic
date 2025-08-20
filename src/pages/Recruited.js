@@ -19,17 +19,17 @@ const Recruited = () => {
   const [textKey, setTextKey] = useState(0);
 
   const loadingTexts = [
-    'Are you that smart?',
+    "Let's run some verifications",
     'Analysing answers...',
-    'Party animal huh?',
+    'Arrogance? Ego? Hmm...',
     'Got it.',
-    'Great.'
+    "Lets see if you're recruited now"
   ];
 
   const interactiveMessages = [
-    "We had our fun in your interview",
-    "You know what makes us the best?",
-    "We are a family",
+    "We saw your potential in the interview",
+    "Can you can prove it?",
+    "Regardless, We are a family",
     "And now?",
     "You're a part of it."
   ];
@@ -201,7 +201,7 @@ Congratulations. Next up, clear probations               </p>
               <div className="ticket">
                 <div className="ticket-header">
                   <div className="ticket-logo">EDCIC</div>
-                  <div className="ticket-type">AFTERPARTY ACCESS</div>
+                  <div className="ticket-type">ONCE-IN-A-LIFETIME ACCESS</div>
                 </div>
                 
                 <div className="ticket-main">
@@ -222,14 +222,6 @@ Congratulations. Next up, clear probations               </p>
                   </div>
                 </div>
 
-                <div className="ticket-footer">
-                  <div className="qr-placeholder">
-                    <div className="qr-code"></div>
-                  </div>
-                  <div className="ticket-info">
-                    <p>Present this pass for exclusive access</p>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -247,8 +239,8 @@ Congratulations. Next up, clear probations               </p>
                 <div className="step-item">
                   <div className="step-number">02</div>
                   <div className="step-content">
-                    <h4>Get ready for substance abuse</h4>
-                    <p>Or help abuse others if you're into that</p>
+                    <h4>Work towards your dreams and goals</h4>
+                    <p>We're here to help you achieve them</p>
                   </div>
                 </div>
               </div>
