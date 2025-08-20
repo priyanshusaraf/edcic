@@ -204,7 +204,7 @@ Congratulations.           </p>
                 <div className="ticket-main">
                   <h2 className="ticket-title">Exclusive Access Pass</h2>
                   <p className="ticket-description">
-                  Join us in creating the finest events, working with visionary founders and attending the craziest afterparties,                  </p>
+                  Join us in creating the finest events, working with visionary founders and attending the craziest afterparties.                 </p>
                 </div>
 
                 <div className="ticket-details">
