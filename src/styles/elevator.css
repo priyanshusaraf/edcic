@@ -3,6 +3,23 @@
   color: white;
   text-align: center;
   padding: 50px 20px;
+  min-height: 100vh;
+}
+
+.elevatorInfo__fadeIn {
+  animation: fadeInContent 1s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInContent {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .elevatorInfo__logo {
   height: 70vh;

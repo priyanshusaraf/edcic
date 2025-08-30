@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/elevator.css";
+import ElevatorLanding from "../components/ElevatorLanding";
 import networkingIcon from "../assets/networking.jpg";
 import prizesIcon from "../assets/prizes.png";
 import mentoringIcon from "../assets/mentoring.jpeg";
@@ -9,8 +10,18 @@ import benefitsIcon from "../assets/benefits.png";
 import elevatorLogo from "../assets/elevatorLogo.png"; // Update with the correct path if needed
 
 const ElevatorInfo = () => {
+  const [showLanding, setShowLanding] = useState(true);
+
+  const handleAnimationComplete = () => {
+    setShowLanding(false);
+  };
+
+  if (showLanding) {
+    return <ElevatorLanding onAnimationComplete={handleAnimationComplete} />;
+  }
+
   return (
-    <div className="elevatorInfo__container">
+    <div className="elevatorInfo__container elevatorInfo__fadeIn">
       {/* Elevator Logo & Registration Section */}
       <div className="elevatorInfo__header">
         <img

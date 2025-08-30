@@ -8,20 +8,37 @@ import friendsFmLogo from "../assets/friends_fm_logo.webp";
 import juiceologyLogo from "../assets/juiceology.png";
 import balajiLogo from "../assets/balaji.png";
 import aipLogo from "../assets/aip.jpg";
+import PrismComponent from "../components/Prism";
 import "../styles/Prism.css";
 
 const Prism = () => {
   return (
     <div className="prism__container">
+      {/* Animated Prism Background */}
+      <div className="prism__background">
+        <PrismComponent
+          animationType="rotate"
+          timeScale={0.5}
+          height={3.5}
+          baseWidth={5.5}
+          scale={3.6}
+          hueShift={0}
+          colorFrequency={1}
+          noise={0.5}
+          glow={1}
+          suspendWhenOffscreen={true}
+        />
+      </div>
+      
       {/* Banner Section */}
       <section className="prism__banner">
         <div className="prism__bannerContent">
           <div className="prism__text">
             <h1>PRISM</h1>
             <p>A one of a kind corporate simulation event.</p>
-            <button className="prism__registerButton" disabled>
-              Register Now
-            </button>
+            <div className="prism__subtitle">
+              Experience the future of corporate simulation
+            </div>
           </div>
           <img
             className="prism__bannerLogo"
